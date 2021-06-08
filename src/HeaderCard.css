@@ -1,0 +1,27 @@
+.HeaderCard.card.card-body{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  padding:5%;
+  border-radius: 0%;
+  width:80%;
+  font-size: 2em;
+}
+.HeaderCard.card.card-body:hover{
+  box-shadow: -10px 10px 0px -2px black;
+	transform: translate(5px, -1px);
+}
+
+.HeaderCard-Text.card-text{
+  font-weight: lighter;
+}
+.HeaderCard-Button.btn{
+  border-radius: 0%;
+  width:40%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #b7b7a4;
+}
+.HeaderCard-Button.btn:hover{
+  background-color: rgb(65, 65, 65);
+}

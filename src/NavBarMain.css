@@ -1,0 +1,22 @@
+.NavBarMain{
+  padding-left: 2%;
+  background-color:#fff0e5;
+  
+} 
+
+
+.border.border-dark{
+  border-radius: 0%;
+}
+
+.NavBar-menu.dropdown-item:hover{
+  background-color: #a5a58d;
+}
+
+.NavBar-menu.dropdown-item{
+  font-weight: lighter;
+}
+
+NavLink{
+  color:pink;
+}
