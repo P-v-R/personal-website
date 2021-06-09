@@ -1,7 +1,8 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import AboutMeCard from "./AboutMeCard"
-import SiteBody from "./SiteBody";
+import AboutMePage from "./AboutMePage";
+import HomePage from "./HomePage";
 /** Site-wide routes.
  *
  *
@@ -14,16 +15,12 @@ function Routes() {
   return (
       <div className="BodyDiv">
         <Switch>
-
           <Route exact path="/">
-            <SiteBody />
+            <HomePage />
           </Route>
           <Route exact path="/aboutme">
-            <AboutMeCard />
+            <AboutMePage />
           </Route>
-
-
-
           <Redirect to="/" />
         </Switch>
       </div>

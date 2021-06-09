@@ -1,0 +1,28 @@
+.InfoCard.card.card-body{
+  margin-top: 5%;
+  margin-bottom: 10%;
+  padding:3%;
+  border-radius: 0%;
+  font-size: 1.5em;
+}
+.InfoCard.card.card-body:hover{
+  box-shadow: -10px 10px 0px -2px black;
+	transform: translate(5px, -1px);
+}
+
+.InfoCard-Text.card-text{
+  font-weight: lighter;
+  font-size: .75em;
+};
+
+.InfoCard-Button.btn:hover{
+  background-color: rgb(122, 122, 122);
+}
+
+.InfoCardDiv{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}

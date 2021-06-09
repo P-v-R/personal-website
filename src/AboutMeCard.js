@@ -1,38 +1,41 @@
 import React from 'react';
 import { motion } from "framer-motion"
+import "./AboutMeCard.css"
 
 
-import { Card, Button, CardTitle, CardText} from 'reactstrap';
+import { Card, CardTitle, CardText } from 'reactstrap';
 
 
-const HeaderCard = ({clickHandler}) => {
+function AboutMeCard(){
 
-
-  
   return (
 
     <motion.div
-    initial={{ scaleY: 0 }}
-    animate={{ scaleY: 1 }}
-    exit={{ scaleY: 0 }}
-    transition={{ duration: 0.5 }}
-  >
-      <Card body className="HeaderCard text-center border border-dark">
+      animate={{ x: 0 }}
+      initial={{ x: - 2000 }}
+      drag
+      dragConstraints={{
+        top: -1,
+        left: -1,
+        right: 1,
+        bottom: 1,
+      }}
+    >
+      <Card body className="AboutMeCard text-center border border-dark">
         <CardTitle tag="h2">About Me</CardTitle>
-        <CardText className="HeaderCard-Text">
-        sample text about the things i like to do and what makes me greatsample text about the things i like to do and what makes me great
+        <CardText className="AboutMeCard-Text">
+        sample text about the things i like tod what makes me great sample text abouand what makes me great
+        sample text about the things i hat makes me great sample text about the things i like to do and what makes me great
           </CardText>
         <motion.div
-        animate={{ x:0 }}
-        initial={{x :- 2000}}
-        onClick={clickHandler}
+          animate={{ x: 0 }}
+          initial={{ x: - 2000 }}
+          transition={{ ease: "easeOut", duration: 2 }}
         >
-          <Button className="HeaderCard-Button">Click Here!</Button>
-
         </motion.div>
       </Card>
-      </motion.div>
+    </motion.div>
   );
 };
 
-export default HeaderCard;
+export default AboutMeCard;

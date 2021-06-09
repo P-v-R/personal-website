@@ -17,13 +17,14 @@ import {
 
 const NavBarMain = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const name = "<Perryvon/>"
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div>
       <Navbar className="NavBarMain border-bottom border-dark" light expand="md">
-        <NavbarBrand href="/">Perry von</NavbarBrand>
+        <NavbarBrand href="/">{name}</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>

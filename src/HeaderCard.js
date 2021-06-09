@@ -1,18 +1,19 @@
 import React from 'react';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import {Link} from "react-router-dom";
 
 
-import { Card, Button, CardTitle, CardText, Container } from 'reactstrap';
+import { Card, CardTitle, CardText } from 'reactstrap';
 import "./HeaderCard.css"
 
-const HeaderCard = ({clickHandler}) => {
+const HeaderCard = ({ clickHandler }) => {
 
 
-  
+
   return (
     <motion.div
-      animate={{ scale: 1 }}
-      initial={{ scale: 0.2 }}
+    animate={{ x: 0 }}
+    initial={{ x: 2000 }}
       drag
       dragConstraints={{
         top: -1,
@@ -21,19 +22,21 @@ const HeaderCard = ({clickHandler}) => {
         bottom: 1,
       }}
     >
-      
+
       <Card body className="HeaderCard text-center border border-dark">
-        <CardTitle tag="h1">Welcome to my Website!</CardTitle>
+        <CardTitle tag="h1">Howdy!</CardTitle>
         <CardText className="HeaderCard-Text">
           I'm Perry, a Web Developer, Photographer, and Graphic
           Designer based out of Los Angeles, California.
           </CardText>
         <motion.div
-        animate={{ x:0 }}
-        initial={{x :- 2000}}
-        onClick={clickHandler}
+          animate={{ x: 0, opacity:1 }}
+          initial={{ x: - 2000, opacity: 0 }}
+          transition={{ delay: 1 }}
+          onClick={clickHandler}
         >
-          <Button  onClick={clickHandler}className="HeaderCard-Button">Click Here!</Button>
+          <Link className="btn HeaderCard-Button" to="/aboutme">Button</Link>
+
         </motion.div>
       </Card>
 

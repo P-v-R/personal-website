@@ -1,34 +1,41 @@
-.HeaderCard.card.card-body{
+.AboutMeCard.card.card-body{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 10%;
   padding:5%;
   border-radius: 0%;
-  width:80%;
-  font-size: 2em;
+  width:100%;
+  font-size: 1.5em;
 }
-.HeaderCard.card.card-body:hover{
+
+.AboutMeCard.card.card-body:hover{
   box-shadow: -10px 10px 0px -2px black;
 	transform: translate(5px, -1px);
 }
 
-.HeaderCard-Text.card-text{
+.AboutMeCard-Text.card-text{
   font-weight: lighter;
 }
-.HeaderCard-Button.btn{
+
+.AboutMeCard-Button.btn{
   border-radius: 0%;
   width:40%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3%;
   background-color: #b7b7a4;
   color: #fff0e5;
   border: solid black 1px;
   font-family: 'Roboto Mono', monospace;
   font-size:70%;
-  width:100%;
 }
-.HeaderCard-Button.btn:hover{
+
+.AboutMeCard-Button.btn:hover{
   background-color: rgb(122, 122, 122);
 }
 
+.AboutMePage.Cards{
+  display: inline-flex;
+  margin-top: 1%;
+ 
+}
