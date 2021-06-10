@@ -1,15 +1,33 @@
 import React from "react";
-import { Container, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
 import AboutMeCard from "./AboutMeCard";
 import { motion } from "framer-motion"
 import InfoCard from "./InfoCard";
 import "./AboutMePage.css"
 import InfoCardLarge from "./InfoCardLarge";
 
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { delay: .5, duration: 1 }
+  },
+  exit: {
+    x: "-100vw",
+    transition: { ease: "easeInOut" }
+  }
+}
 function AboutMePage() {
   return (
     <Container>
-      <motion.div>
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit">
         <AboutMeCard />
       </motion.div>
       <div className="AboutMePage Cards">
@@ -17,7 +35,7 @@ function AboutMePage() {
         <h1 className="AboutMePage">.</h1>
         <InfoCard title="Motivation" />
       </div>
-      <InfoCardLarge/>
+      <InfoCardLarge />
 
     </Container>
 

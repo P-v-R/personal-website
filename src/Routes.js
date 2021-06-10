@@ -1,8 +1,8 @@
 import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
-import AboutMeCard from "./AboutMeCard"
+import { Switch, Route, Redirect, useLocation } from "react-router-dom";
 import AboutMePage from "./AboutMePage";
 import HomePage from "./HomePage";
+import { AnimatePresence } from "framer-motion"
 /** Site-wide routes.
  *
  *
@@ -10,11 +10,12 @@ import HomePage from "./HomePage";
  */
 
 function Routes() {
-
+  const location = useLocation();
 
   return (
-      <div className="BodyDiv">
-        <Switch>
+    <div className="BodyDiv">
+      <AnimatePresence>
+        <Switch location={location} key={location.key}>
           <Route exact path="/">
             <HomePage />
           </Route>
@@ -23,7 +24,8 @@ function Routes() {
           </Route>
           <Redirect to="/" />
         </Switch>
-      </div>
+      </AnimatePresence>
+    </div>
   );
 }
 

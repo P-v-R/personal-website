@@ -11,18 +11,39 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-  NavbarText
+  DropdownItem
 } from 'reactstrap';
+import {motion} from "framer-motion";
 
-const NavBarMain = () => {
+
+
+const containerVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: { delay: 1.5, duration: 1.5 }
+  },
+  exit: {
+    x:"-100vw",
+    transition: {ease:"easeInOut" }
+  }
+}
+
+
+function NavBarMain () {
   const [isOpen, setIsOpen] = useState(false);
   const name = "<Perryvon/>"
 
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <motion.div
+    variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit">
       <Navbar className="NavBarMain border-bottom border-dark" light expand="md">
         <NavbarBrand href="/">{name}</NavbarBrand>
         <NavbarToggler onClick={toggle} />
@@ -45,7 +66,7 @@ const NavBarMain = () => {
                 <DropdownItem className="NavBar-menu">
                   <NavLink style = {{color:"black"}} href="/aboutme">Option 2</NavLink>
                 </DropdownItem>
-                <DropdownItem divider />
+                <DropdownItem  divider/>
                 <DropdownItem>
                   Reset
                 </DropdownItem>
@@ -54,7 +75,7 @@ const NavBarMain = () => {
           </Nav>
         </Collapse>
       </Navbar>
-    </div>
+    </motion.div>
   );
 }
 

@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 
 
-import { Card, CardTitle, CardText } from 'reactstrap';
+import { Card, CardTitle } from 'reactstrap';
 
 
 function InfoCard({ title }) {
@@ -25,10 +25,10 @@ function InfoCard({ title }) {
 
       <Card body className="InfoCard text-center border border-dark">
         <CardTitle tag="h2">{title}</CardTitle>
-        <CardText className="InfoCard-Text">
+        <div className="InfoCard-Text">
           sample text about the things i like to do and what makes me great sample text about the things i like to do and what makes me great
           sample text about the things i like to do and what makes me great sample text about the things i like to do and what makes me great
-          </CardText>
+          </div>
       </Card>
     </motion.div>
   );

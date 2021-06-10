@@ -1,6 +1,6 @@
 import React from "react";
 import "./InfoCardLarge.css"
-import { Card, CardTitle, CardText } from 'reactstrap';
+import { Card, CardTitle } from 'reactstrap';
 import { motion } from "framer-motion"
 import ProgressBar from "./ProgressBar";
 import ProgressBarSpecial from "./ProgressBarSpecial";
@@ -11,6 +11,9 @@ function InfoCardLarge(){
   return (
     
     <motion.div className="InfoCardLargeDiv"
+    animate={{ y: 0 , opacity: 1}}
+    initial={{ y: 2000, opacity:0 }}
+    transition={{ delay: 1 , duration: 3 }}
     drag
       dragConstraints={{
         top: -1,
@@ -20,7 +23,7 @@ function InfoCardLarge(){
       }}>
       <Card body className="InfoCardLarge text-center border border-dark">
         <CardTitle tag="h2">Skills</CardTitle>
-        <CardText className="InfoCardLarge-Text">
+        <div className="InfoCardLarge-Text">
           <motion.div className="InfoCardLoadingBar"> </motion.div>
           <ProgressBar percent={70} title={"Python"} rating={"🥇🥇🥇"}/>
           <ProgressBar percent={90} title={"JavaScript"} rating={"🏆🏆🏆"}/>
@@ -36,7 +39,7 @@ function InfoCardLarge(){
                 rating={"Always Improving!!!"}
           />
 
-          </CardText>
+          </div>
       </Card>
     </motion.div>
   );

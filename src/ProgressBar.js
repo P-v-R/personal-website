@@ -4,7 +4,6 @@ import "./ProgressBar.css"
 
 
 function ProgressBar({ percent, title, rating }) {
-  console.log("percent === >", percent)
   return (
     <div>
       <div className="ProgressLogo">{rating}</div>

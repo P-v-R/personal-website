@@ -35,7 +35,7 @@ const HeaderCard = ({ clickHandler }) => {
           transition={{ delay: 1 }}
           onClick={clickHandler}
         >
-          <Link className="btn HeaderCard-Button" to="/aboutme">Button</Link>
+          <Link className="btn HeaderCard-Button" to="/aboutme">→ Click Here! ←</Link>
 
         </motion.div>
       </Card>

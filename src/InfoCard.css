@@ -1,5 +1,5 @@
 .InfoCard.card.card-body{
-  margin-top: 0%;
+
   margin-bottom: 10%;
   padding:3%;
   border-radius: 0%;
@@ -10,7 +10,7 @@
 	transform: translate(5px, -1px);
 }
 
-.InfoCard-Text.card-text{
+.InfoCard-Text{
   font-weight: lighter;
   font-size: .75em;
 };

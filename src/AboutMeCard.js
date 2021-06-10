@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import "./AboutMeCard.css"
 
 
-import { Card, CardTitle, CardText } from 'reactstrap';
+import { Card, CardTitle } from 'reactstrap';
 
 
 function AboutMeCard(){
@@ -23,10 +23,10 @@ function AboutMeCard(){
     >
       <Card body className="AboutMeCard text-center border border-dark">
         <CardTitle tag="h2">About Me</CardTitle>
-        <CardText className="AboutMeCard-Text">
+        <div className="AboutMeCard-Text">
         sample text about the things i like tod what makes me great sample text abouand what makes me great
         sample text about the things i hat makes me great sample text about the things i like to do and what makes me great
-          </CardText>
+          </div>
         <motion.div
           animate={{ x: 0 }}
           initial={{ x: - 2000 }}
