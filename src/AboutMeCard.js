@@ -11,8 +11,8 @@ function AboutMeCard(){
   return (
 
     <motion.div
-      animate={{ x: 0 }}
-      initial={{ x: - 2000 }}
+      animate={{ x: 0 , opacity: 1}}
+      initial={{ x: - 2000, opacity:0 }}
       drag
       dragConstraints={{
         top: -1,

@@ -3,10 +3,13 @@ import HeaderCard from "./HeaderCard";
 import { motion } from "framer-motion"
 
 function HomePage() {
-  return (      
+  return (    
+    <div>
         <motion.div>
           <HeaderCard/>
         </motion.div>
+        
+        </div>  
   )
 }
 

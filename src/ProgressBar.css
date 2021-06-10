@@ -1,0 +1,23 @@
+.ProgressDiv{
+  display: flex;
+  justify-content:flex-end;
+  background-color: black;
+  color:antiquewhite;
+  padding-right: 3%;
+  margin-top: 1%;
+  
+}
+.ProgressDiv:hover{
+  background-color: #b7b7a4;
+  
+  
+}
+
+.ProgressLogo{
+  position: absolute;
+  display: flex;
+  color: black;
+  font-size: .9em;
+  z-index: -1;
+
+}

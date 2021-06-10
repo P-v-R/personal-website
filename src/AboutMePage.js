@@ -18,6 +18,7 @@ function AboutMePage() {
         <InfoCard title="Motivation" />
       </div>
       <InfoCardLarge/>
+
     </Container>
 
   )

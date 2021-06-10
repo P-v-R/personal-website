@@ -1,7 +1,7 @@
 .InfoCardLarge.card.card-body{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
   padding:5%;
   border-radius: 0%;
@@ -38,4 +38,8 @@
 .InfoCardLoadingBar{
   background-color: burlywood;
   width: 40%;
+}
+
+.card-title{
+  padding-bottom: 1rem;
 }
