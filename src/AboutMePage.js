@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import InfoCard from "./InfoCard";
 import "./AboutMePage.css"
 import InfoCardLarge from "./InfoCardLarge";
-
+import {educationText, motivationText, aboutMeText} from "./texts/bioTexts"
 
 const containerVariants = {
   hidden: {
@@ -28,15 +28,14 @@ function AboutMePage() {
         initial="hidden"
         animate="visible"
         exit="exit">
-        <AboutMeCard />
+        <AboutMeCard title={"About Me"}textbody={aboutMeText} />
       </motion.div>
       <div className="AboutMePage Cards">
-        <InfoCard title="Education" />
+        <InfoCard title="Education" textbody={educationText} />
         <h1 className="AboutMePage">.</h1>
-        <InfoCard title="Motivation" />
+        <InfoCard title="Motivation" textbody={motivationText} />
       </div>
       <InfoCardLarge />
-
     </Container>
 
   )

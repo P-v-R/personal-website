@@ -6,7 +6,8 @@ import {Link} from "react-router-dom";
 import { Card, CardTitle, CardText } from 'reactstrap';
 import "./HeaderCard.css"
 
-const HeaderCard = ({ clickHandler }) => {
+
+const HeaderCard = ({ clickHandler, textbody }) => {
 
 
 
@@ -26,8 +27,7 @@ const HeaderCard = ({ clickHandler }) => {
       <Card body className="HeaderCard text-center border border-dark">
         <CardTitle tag="h1">Howdy!</CardTitle>
         <CardText className="HeaderCard-Text">
-          I'm Perry, a Web Developer, Photographer, and Graphic
-          Designer based out of Los Angeles, California.
+          {textbody}
           </CardText>
         <motion.div
           animate={{ x: 0, opacity:1 }}
@@ -43,5 +43,6 @@ const HeaderCard = ({ clickHandler }) => {
     </motion.div>
   );
 };
+
 
 export default HeaderCard;

@@ -13,6 +13,7 @@ import {
   DropdownMenu,
   DropdownItem
 } from 'reactstrap';
+import {Link} from "react-router-dom";
 import {motion} from "framer-motion";
 
 
@@ -53,7 +54,7 @@ function NavBarMain () {
               <NavLink className="test" href="/aboutme">Resume</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/aboutme">Contact</NavLink>
+              <Link className="test" to="/contact">Contact</Link>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
@@ -61,10 +62,10 @@ function NavBarMain () {
               </DropdownToggle>
               <DropdownMenu className="border border-dark dropDown" right>
                 <DropdownItem className="NavBar-menu">
-                  <NavLink style = {{color:"black"}} href="/aboutme">Option 1</NavLink>
+                  <NavLink style = {{color:"black"}} to="/aboutme">Option 1</NavLink>
                 </DropdownItem>
                 <DropdownItem className="NavBar-menu">
-                  <NavLink style = {{color:"black"}} href="/aboutme">Option 2</NavLink>
+                  <NavLink style = {{color:"black"}} to="/aboutme">Option 2</NavLink>
                 </DropdownItem>
                 <DropdownItem  divider/>
                 <DropdownItem>

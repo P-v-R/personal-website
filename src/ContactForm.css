@@ -1,0 +1,36 @@
+.ContactForm{
+  width:60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ContactFormMessage{
+  width:60%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ContactFormButton.btn.btn-secondary{
+  border-radius: 0%;
+  width:40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  background-color: #b7b7a4;
+  color: #3b3b3b;
+  border: solid black 1px;
+  font-family: 'Roboto Mono', monospace;
+  font-size:1em;
+  width:100%;
+}
+
+input.ContactFormField{
+border-radius: 0%;
+border: solid black 1px;
+}
+
+.ContactFormField.form-control{
+  border-radius: 0%;
+border: solid black 1px;
+}

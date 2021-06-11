@@ -3,6 +3,7 @@ import { Switch, Route, Redirect, useLocation } from "react-router-dom";
 import AboutMePage from "./AboutMePage";
 import HomePage from "./HomePage";
 import { AnimatePresence } from "framer-motion"
+import ContactForm from "./ContactForm";
 /** Site-wide routes.
  *
  *
@@ -21,6 +22,9 @@ function Routes() {
           </Route>
           <Route exact path="/aboutme">
             <AboutMePage />
+          </Route>
+          <Route exact path="/contact">
+            <ContactForm />
           </Route>
           <Redirect to="/" />
         </Switch>

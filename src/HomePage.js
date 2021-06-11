@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderCard from "./HeaderCard";
 import { motion } from "framer-motion"
-
+import {howdyText} from "./texts/bioTexts"
 
 const containerVariants = {
   hidden: {
@@ -24,7 +24,7 @@ function HomePage() {
       // initial="hidden"
       // animate="visible"
       exit="exit">
-      <HeaderCard />
+      <HeaderCard textbody={howdyText}/>
     </motion.div>
 
 
