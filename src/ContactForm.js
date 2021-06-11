@@ -9,7 +9,11 @@ import {
 } from 'reactstrap';
 
 function ContactForm(){
-  const [formData, setFormData] = useState({})
+  const [formData, setFormData] = useState({});
+
+  function handleSubmit(evt){
+    evt.preventDefault()
+  }
   
   function handleChange(evt) {
     const { name, value } = evt.target;
@@ -17,13 +21,13 @@ function ContactForm(){
       ...fData,
       [name]: value.trim(),
     }));
-    console.log(formData)
+    
   }
 
   return (
     <div className="App">
       <h2 className="ContactFormMessage">Contact Me</h2>
-      <Form className="ContactForm" onChange={handleChange}>
+      <Form className="ContactForm" onChange={handleChange} onSubmit={handleSubmit}>
         <FormGroup>
           <Label for="email">Your Email?</Label>
           <Input className="ContactFormField"

@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import InfoCard from "./InfoCard";
 import "./AboutMePage.css"
 import InfoCardLarge from "./InfoCardLarge";
-import {educationText, motivationText, aboutMeText} from "./texts/bioTexts"
+import { educationText, motivationText, aboutMeText } from "./texts/bioTexts"
 
 const containerVariants = {
   hidden: {
@@ -16,8 +16,11 @@ const containerVariants = {
     transition: { delay: .5, duration: 1 }
   },
   exit: {
-    x: "-100vw",
-    transition: { ease: "easeInOut" }
+    x: -10000,
+    transition: {
+      ease: "easeInOut",
+      duration: 1
+    }
   }
 }
 function AboutMePage() {
@@ -27,15 +30,16 @@ function AboutMePage() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        exit="exit">
-        <AboutMeCard title={"About Me"}textbody={aboutMeText} />
+        exit="exit"
+      >
+        <AboutMeCard title={"About Me"} textbody={aboutMeText} />
+        <div className="AboutMePage Cards">
+          <InfoCard title="Education" textbody={educationText} />
+          <h1 className="AboutMePage">.</h1>
+          <InfoCard title="Motivation" textbody={motivationText} />
+        </div>
+        <InfoCardLarge />
       </motion.div>
-      <div className="AboutMePage Cards">
-        <InfoCard title="Education" textbody={educationText} />
-        <h1 className="AboutMePage">.</h1>
-        <InfoCard title="Motivation" textbody={motivationText} />
-      </div>
-      <InfoCardLarge />
     </Container>
 
   )

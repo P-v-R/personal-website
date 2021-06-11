@@ -43,3 +43,10 @@
 .card-title{
   padding-bottom: 1rem;
 }
+.svg-inline--fa{
+  margin-top: 3%;
+}
+
+.svg-inline--fa + .svg-inline--fa{
+  margin-left: 4%;
+}

@@ -13,8 +13,8 @@ import {
   DropdownMenu,
   DropdownItem
 } from 'reactstrap';
-import {Link} from "react-router-dom";
-import {motion} from "framer-motion";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 
 
@@ -27,13 +27,13 @@ const containerVariants = {
     transition: { delay: 1.5, duration: 1.5 }
   },
   exit: {
-    x:"-100vw",
-    transition: {ease:"easeInOut" }
+    x: "-100vw",
+    transition: { ease: "easeInOut" }
   }
 }
 
 
-function NavBarMain () {
+function NavBarMain() {
   const [isOpen, setIsOpen] = useState(false);
   const name = "<Perryvon/>"
 
@@ -41,7 +41,7 @@ function NavBarMain () {
 
   return (
     <motion.div
-    variants={containerVariants}
+      variants={containerVariants}
       initial="hidden"
       animate="visible"
       exit="exit">
@@ -51,10 +51,10 @@ function NavBarMain () {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink className="test" href="/aboutme">Resume</NavLink>
+              <Link className="nav-link" to="/aboutme">About Me</Link>
             </NavItem>
             <NavItem>
-              <Link className="test" to="/contact">Contact</Link>
+              <Link className="nav-link" to="/contact">Contact</Link>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
@@ -62,12 +62,12 @@ function NavBarMain () {
               </DropdownToggle>
               <DropdownMenu className="border border-dark dropDown" right>
                 <DropdownItem className="NavBar-menu">
-                  <NavLink style = {{color:"black"}} to="/aboutme">Option 1</NavLink>
+                  <NavLink style={{ color: "black" }} to="/aboutme">Option 1</NavLink>
                 </DropdownItem>
                 <DropdownItem className="NavBar-menu">
-                  <NavLink style = {{color:"black"}} to="/aboutme">Option 2</NavLink>
+                  <NavLink style={{ color: "black" }} to="/aboutme">Option 2</NavLink>
                 </DropdownItem>
-                <DropdownItem  divider/>
+                <DropdownItem divider />
                 <DropdownItem>
                   Reset
                 </DropdownItem>

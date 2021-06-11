@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import {Link} from "react-router-dom";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { Card, CardTitle, CardText } from 'reactstrap';
 import "./HeaderCard.css"
@@ -36,7 +36,6 @@ const HeaderCard = ({ clickHandler, textbody }) => {
           onClick={clickHandler}
         >
           <Link className="btn HeaderCard-Button" to="/aboutme">→ Click Here! ←</Link>
-
         </motion.div>
       </Card>
 
