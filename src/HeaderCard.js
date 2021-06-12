@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import {Link} from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { Card, CardTitle, CardText } from 'reactstrap';
 import "./HeaderCard.css"

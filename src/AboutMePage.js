@@ -43,9 +43,9 @@ function AboutMePage() {
         <PhotoCard />
       </motion.div>
       
-        <InfoCard title="Jobly JobFinder" textbody={joblyText} />
+        <InfoCard title="Jobly JobFinder 🔎" textbody={joblyText} />
         <h1 className="AboutMePage">.</h1>
-        <InfoCard title="Motivation" textbody={tweebler}/>
+        <InfoCard title="Tweebler 🦤 " textbody={tweebler}/>
         <h1 className="AboutMePage">.</h1>
         <h1 className="AboutMePage">.</h1>
     

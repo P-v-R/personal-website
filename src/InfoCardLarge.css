@@ -50,3 +50,7 @@
 .svg-inline--fa + .svg-inline--fa{
   margin-left: 4%;
 }
+
+.icon:hover{
+  color:#ffb703;
+}

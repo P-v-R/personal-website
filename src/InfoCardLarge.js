@@ -43,15 +43,15 @@ function InfoCardLarge() {
           />
         </div>
         <div className="infoCardLargeBrands" >
-          <FontAwesomeIcon icon={['fab', 'react']} size="2x" />
-          <FontAwesomeIcon icon={['fab', 'js']} size="2x"/>
-          <FontAwesomeIcon icon={['fab', 'python']} size="2x"/>
-          <FontAwesomeIcon icon={['fab', 'apple']} size="2x"/>
-          <FontAwesomeIcon icon={['fab', 'github']} size="2x"/>
-          <FontAwesomeIcon icon={['fab', 'node-js']} size="2x"/>
-          <FontAwesomeIcon icon={['fab', 'css3-alt']} size="2x"/>
-          <FontAwesomeIcon icon={['fab', 'html5']} size="2x"/>
-          <FontAwesomeIcon icon={['fab', 'aws']} size="2x"/>
+          <FontAwesomeIcon className="icon" icon={['fab', 'react']} size="2x" />
+          <FontAwesomeIcon className="icon" icon={['fab', 'js']} size="2x"/>
+          <FontAwesomeIcon className="icon" icon={['fab', 'python']} size="2x"/>
+          <FontAwesomeIcon className="icon"icon={['fab', 'apple']} size="2x"/>
+          <FontAwesomeIcon className="icon" icon={['fab', 'github']} size="2x"/>
+          <FontAwesomeIcon className="icon" icon={['fab', 'node-js']} size="2x"/>
+          <FontAwesomeIcon className="icon" icon={['fab', 'css3-alt']} size="2x"/>
+          <FontAwesomeIcon className="icon" icon={['fab', 'html5']} size="2x"/>
+          <FontAwesomeIcon className="icon" icon={['fab', 'aws']} size="2x"/>
         </div>
       </Card>
 
