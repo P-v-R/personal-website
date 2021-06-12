@@ -33,16 +33,16 @@ function InfoCardLarge() {
           <ProgressBar percent={85} title={"React"} rating={"🔥🔥🔥"} />
           <ProgressBar percent={80} title={"Node.js"} rating={"🤌🤌🤌"} />
           <ProgressBar percent={75} title={"Flask"} rating={"👀👀👀"} />
-          <ProgressBar percent={60} title={"SQL"} rating={"📈📈📈"} />
+          <ProgressBar percent={76} title={"SQL"} rating={"📈📈📈"} />
           <ProgressBar percent={70} title={"Git"} rating={"🔨🔨🔨"} />
-          <ProgressBar percent={70} title={"MacOs"} rating={"🔨🔨🔨"} />
+          <ProgressBar percent={60} title={"MacOs"} rating={"🍎🍏👨‍💻"} />
           <ProgressBarSpecial
             percent={50}
             title={"Skills to improve on?"}
             rating={"Always Improving!!!"}
           />
         </div>
-        <motion.div className="infoCardLargeBrands" >
+        <div className="infoCardLargeBrands" >
           <FontAwesomeIcon icon={['fab', 'react']} size="2x" />
           <FontAwesomeIcon icon={['fab', 'js']} size="2x"/>
           <FontAwesomeIcon icon={['fab', 'python']} size="2x"/>
@@ -52,9 +52,7 @@ function InfoCardLarge() {
           <FontAwesomeIcon icon={['fab', 'css3-alt']} size="2x"/>
           <FontAwesomeIcon icon={['fab', 'html5']} size="2x"/>
           <FontAwesomeIcon icon={['fab', 'aws']} size="2x"/>
-          <FontAwesomeIcon icon={['fab', 'typescript']} size="2x"/>
-
-        </motion.div>
+        </div>
       </Card>
 
     </motion.div>

@@ -5,7 +5,8 @@ import { motion } from "framer-motion"
 import InfoCard from "./InfoCard";
 import "./AboutMePage.css"
 import InfoCardLarge from "./InfoCardLarge";
-import { educationText, motivationText, aboutMeText } from "./texts/bioTexts"
+import { educationText, motivationText, aboutMeText, joblyText, tweebler } from "./texts/bioTexts"
+import PhotoCard from "./PhotoCard";
 
 const containerVariants = {
   hidden: {
@@ -39,8 +40,17 @@ function AboutMePage() {
           <InfoCard title="Motivation" textbody={motivationText} />
         </div>
         <InfoCardLarge />
+        <PhotoCard />
       </motion.div>
+      
+        <InfoCard title="Jobly JobFinder" textbody={joblyText} />
+        <h1 className="AboutMePage">.</h1>
+        <InfoCard title="Motivation" textbody={tweebler}/>
+        <h1 className="AboutMePage">.</h1>
+        <h1 className="AboutMePage">.</h1>
+    
     </Container>
+
 
   )
 }

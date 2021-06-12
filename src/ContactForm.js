@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactForm.css"
+import { motion } from "framer-motion";
 import {
   Button,
   Form,
@@ -7,6 +8,7 @@ import {
   Input,
   Label
 } from 'reactstrap';
+
 
 function ContactForm(){
   const [formData, setFormData] = useState({});
@@ -25,7 +27,10 @@ function ContactForm(){
   }
 
   return (
-    <div className="App">
+    <motion.div className="ContactFormBody"
+      animate={{opacity:1}}
+      initial={{opacity:0}}
+      transition={{delay:.75}}>
       <h2 className="ContactFormMessage">Contact Me</h2>
       <Form className="ContactForm" onChange={handleChange} onSubmit={handleSubmit}>
         <FormGroup>
@@ -55,7 +60,7 @@ function ContactForm(){
         
       <Button className="ContactFormButton">Send!</Button>
     </Form>
-  </div>
+  </motion.div>
 );
 }
 

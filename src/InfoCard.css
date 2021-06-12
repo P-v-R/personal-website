@@ -1,10 +1,13 @@
 .InfoCard.card.card-body{
 
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 5%;
   padding:3%;
   border-radius: 0%;
   font-size: 1.5em;
   max-width: 90%;
+  min-width: 30%;
   height: 100%;
 }
 .InfoCard.card.card-body:hover{
@@ -22,9 +25,29 @@
 }
 
 .InfoCardDiv{
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  min-width: 40%;
+  
 
+}
+.InfoCard li{
+  background-color: #b7b7a4 ;
+  margin-top: 3%;
+  border:solid 2px white;
+}
+.InfoCard li:hover{
+  background-color: #b7b7a4 ;
+  border:solid 2px black;
+  margin-top: 3%;
+}
+.InfoCard h4{
+  font-weight: lighter;
+  font-size: 1.3em;
+}
+.InfoCard a{
+  font-weight: bolder;
+  color:rgb(51, 181, 185)
 }
