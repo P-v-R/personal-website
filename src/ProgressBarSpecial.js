@@ -9,9 +9,10 @@ function ProgressBarSpecial({ percent, title, rating }) {
     <div>
       <div className="ProgressLogo">{rating}</div>
       <motion.div
-        className="ProgressDiv"
+        className="ProgressDivSpecial"
         style={{ width: `${percent}%` }}
         whileHover={{ x: 250 }}
+        transition={{}}
       >{title}</motion.div>
     </div>
   )

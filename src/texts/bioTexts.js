@@ -9,7 +9,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 cillum dolore eu fugiat nulla pariatur. Excepteur </h4>
 
 
-const howdyText = "I'm Perry, a Web Developer, Photographer, and Graphic Designer based out of Los Angeles, California..."
+const howdyText = "I’m Perry—a Web Developer, Photographer, and Graphic Designer based in Los Angeles, California. "
 
 const aboutMeText = "sample text about the things i like tod what makes me great sample text abouand what makes me great\
 sample text about the things i hat makes me great sample text about the things i like to do and what makes me great"

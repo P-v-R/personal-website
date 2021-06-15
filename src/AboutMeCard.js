@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from "framer-motion"
+import Moment from 'react-moment';
 import "./AboutMeCard.css"
 
 

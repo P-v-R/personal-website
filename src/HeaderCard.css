@@ -29,6 +29,7 @@
   width:100%;
 }
 .HeaderCard-Button.btn:hover{
-  background-color: rgb(122, 122, 122);
+  background-color: rgb(85, 85, 85);
+  color: #ffb703;
 }
 

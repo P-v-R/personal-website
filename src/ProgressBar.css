@@ -9,8 +9,20 @@
 }
 .ProgressDiv:hover{
   background-color: #b7b7a4;
+  color:black;
+}
+.ProgressDivSpecial{
+  display: flex;
+  justify-content:flex-end;
+  background-color: black;
+  color:antiquewhite;
+  padding-right: 3%;
+  margin-top: 1%;
   
-  
+}
+.ProgressDivSpecial:hover{
+  background-color: #ffb703;
+  color:black;
 }
 
 .ProgressLogo{
