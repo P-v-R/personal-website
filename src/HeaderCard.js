@@ -34,7 +34,7 @@ const dateToFormat = "2021-05-18T19:31:55Z"
           transition={{ delay: 1 }}
           onClick={clickHandler}
         >
-          <Moment format="YYYY/MM/DD">{dateToFormat}</Moment>
+          {/* <Moment format="YYYY/MM/DD">{dateToFormat}</Moment> */}
           <Link className="btn HeaderCard-Button" to="/aboutme">→ check it out! ←</Link>
         </motion.div>
       </Card>
