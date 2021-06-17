@@ -51,6 +51,18 @@
   margin-left: 4%;
 }
 
+.SkillLogo{
+ padding: 1.5%;
+ margin-top: 5%;
+
+}
 .icon:hover{
   color:#ffb703;
+}
+
+.infoCardLargeBrands{
+  display: inline-flex;
+ 
+  justify-content: center;
+
 }

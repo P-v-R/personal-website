@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 
-
+// logic to fade into on page reload
 const containerVariants = {
   hidden: {
     opacity: 0,
@@ -32,11 +32,16 @@ const containerVariants = {
   }
 }
 
-
+/**
+ * NavBarMain
+ * STATE:
+ *    isOpen - is drop down menu clicked? t/f
+ * 
+ */
 function NavBarMain() {
   const [isOpen, setIsOpen] = useState(false);
   const name = "<Perryvon/>"
-
+  
   const toggle = () => setIsOpen(!isOpen);
 
   return (
