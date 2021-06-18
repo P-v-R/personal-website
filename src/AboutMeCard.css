@@ -7,6 +7,7 @@
   border-radius: 0%;
   width:100%;
   font-size: 1.5em;
+  transition: all .2s ease-in-out;
 }
 
 .AboutMeCard.card.card-body:hover{
@@ -34,8 +35,7 @@
   background-color: rgb(122, 122, 122);
 }
 
-.AboutMePage.Cards{
+/* .AboutMePage.Cards{
   display: inline-flex;
   margin-top: 1%;
- 
-}
+} */

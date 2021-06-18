@@ -3,10 +3,11 @@ const educationText =  [<li>Rithm School Full Stack Development Program</li>,
                         <li>Code Academy Front End Development Course</li>,
                         <li>Over 2,000 hours of development in 2020 & 2021</li>]
 
-const motivationText = <h4>ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et \
-dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur tate velit esse\ 
-cillum dolore eu fugiat nulla pariatur. Excepteur </h4>
+const motivationText = <h4>A paragraph about the things that inspire and motivate me as a
+                           developer, something to show that coding is more than just a means 
+                           to employment but rather a passion. Focus on clean, easy to use, secure
+                           and accessible applications with an emphasis on mindful design and meaningful 
+                           user experience. BLAH BLAH BLAH BLAH BLAH BLAH </h4>
 
 
 const howdyText = "I’m Perry—a Web Developer, Photographer, and Graphic Designer based in Los Angeles, California. "
@@ -21,5 +22,8 @@ const joblyText = [<a href="http://jobly-jobfinder.surge.sh/"> A React Based CRU
 const tweebler = [<a href="#"> A comedic fake quote generator inspired by some of todays most influential(and also ridiculous)
                                personalities. Generated with python and built on react. </a>]
 
+const thisSite = "Built on React.js, utilizing twitter bootstrap, Githubs API, an API joke generator(check the navbar for a nice joke),\
+ Jest testing, framer motion for animation... and many other tools for an optimal user experience"
 
-  export {educationText, motivationText, howdyText, aboutMeText, joblyText, tweebler}
+
+  export {educationText, motivationText, howdyText, aboutMeText, joblyText, tweebler, thisSite}

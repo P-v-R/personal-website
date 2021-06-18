@@ -17,7 +17,7 @@ function ProgressBar({ percent, title, rating }) {
       <motion.div
         className="ProgressDiv"
         style={{ width: `${percent}%` }}
-        whileHover={{ x: 85 }}
+        whileHover={{ x: `${6}vw` }}
       >{title}</motion.div>
     </div>
   )

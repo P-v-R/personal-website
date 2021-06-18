@@ -6,10 +6,12 @@
   border-radius: 0%;
   width:80%;
   font-size: 2em;
+  transition: all .2s ease-in-out;
 }
 .HeaderCard.card.card-body:hover{
   box-shadow: -10px 10px 0px -2px black;
 	transform: translate(5px, -1px);
+  
 }
 
 .HeaderCard-Text.card-text{

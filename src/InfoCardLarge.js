@@ -32,65 +32,66 @@ function InfoCardLarge() {
         <CardTitle tag="h2">Skills</CardTitle>
         <div className="InfoCardLarge-Text">
           <motion.div className="InfoCardLoadingBar"> </motion.div>
-          <ProgressBar percent={95} title={"Python"} rating={"🥇🥇🥇"} />
-          <ProgressBar percent={95} title={"JavaScript"} rating={"🏆🏆🏆"} />
-          <ProgressBar percent={95} title={"TypeScript"} rating={"👨‍💻👨‍💻👨‍💻"} />
-          <ProgressBar percent={95} title={"React"} rating={"🔥🔥🔥"} />
-          <ProgressBar percent={95} title={"Node.js"} rating={"🤌🤌🤌"} />
-          <ProgressBar percent={95} title={"Flask"} rating={"👀👀👀"} />
-          <ProgressBar percent={95} title={"SQL"} rating={"📈📈📈"} />
-          <ProgressBar percent={95} title={"Git"} rating={"🔨🔨🔨"} />
-          <ProgressBar percent={95} title={"MacOs"} rating={"🍎🍏👨‍💻"} />
+          <ProgressBar percent={95} title={"Python"} rating={"🥇"} />
+          <ProgressBar percent={95} title={"JavaScript"} rating={"🏆"} />
+          <ProgressBar percent={95} title={"TypeScript"} rating={"👨‍💻"} />
+          <ProgressBar percent={95} title={"React"} rating={"🔥"} />
+          <ProgressBar percent={95} title={"Node.js"} rating={"🤌"} />
+          <ProgressBar percent={95} title={"Flask"} rating={"👀"} />
+          <ProgressBar percent={95} title={"SQL"} rating={"📈"} />
+          <ProgressBar percent={95} title={"Git"} rating={"🔨"} />
+          <ProgressBar percent={95} title={"MacOs"} rating={"🍎"} />
+          <ProgressBar percent={95} title={"Adobe Creative suite "} rating={"🎨"} />
           <ProgressBarSpecial
             percent={50}
             title={"Skills to improve on?"}
-            rating={"Always Improving!!!"}
+            rating={"Always Improving!"}
           />
         </div>
-        <div className="infoCardLargeBrands" >
+        <div className="infoCardLargeBrands d-flex flex-wrap" >
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.3 }}>
+            whileHover={{ scale: 1.2 }}>
             <FontAwesomeIcon className="icon" icon={['fab', 'react']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.3 }}>
+            whileHover={{ scale: 1.2 }}>
             <FontAwesomeIcon className="icon" icon={['fab', 'js']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.3 }}>
+            whileHover={{ scale: 1.2 }}>
             <FontAwesomeIcon className="icon" icon={['fab', 'python']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.3 }}>
+            whileHover={{ scale: 1.2 }}>
             <FontAwesomeIcon className="icon" icon={['fab', 'apple']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.3 }}>
+            whileHover={{ scale: 1.2 }}>
             <FontAwesomeIcon className="icon" icon={['fab', 'github']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.3 }}>
+            whileHover={{ scale: 1.2 }}>
             <FontAwesomeIcon className="icon" icon={['fab', 'node-js']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.3 }}>
+            whileHover={{ scale: 1.2 }}>
             <FontAwesomeIcon className="icon" icon={['fab', 'css3-alt']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.3 }}>
+            whileHover={{ scale: 1.2 }}>
             <FontAwesomeIcon className="icon" icon={['fab', 'html5']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.3 }}>
+            whileHover={{ scale: 1.2 }}>
             <FontAwesomeIcon className="icon" icon={['fab', 'aws']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.3 }}>
-            <FontAwesomeIcon className="icon" icon={['fab', 'bootstrap']} size="3x" />
+            whileHover={{ scale: 1.2 }}>
+            <FontAwesomeIcon className="icon" icon={['fab', 'bootstrap']} size="2x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.3 }}>
-            <FontAwesomeIcon className="icon" icon={['fab', 'docker']} size="3x" />
+            whileHover={{ scale: 1.2 }}>
+            <FontAwesomeIcon className="icon" icon={['fab', 'docker']} size="2x" />
           </motion.div>
         </div>
       </Card>

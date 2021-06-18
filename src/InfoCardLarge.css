@@ -7,6 +7,7 @@
   border-radius: 0%;
   width:100%;
   font-size: 1.5em;
+  transition: all .2s ease-in-out;
 }
 
 .InfoCardLarge.card.card-body:hover{
@@ -52,17 +53,15 @@
 }
 
 .SkillLogo{
- padding: 1.5%;
- margin-top: 5%;
-
+ padding: 1.5vw;
+ margin-top: 2vw;
 }
 .icon:hover{
   color:#ffb703;
 }
 
 .infoCardLargeBrands{
-  display: inline-flex;
- 
+  /* display: inline-flex; */
   justify-content: center;
 
 }

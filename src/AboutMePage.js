@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import InfoCard from "./InfoCard";
 import "./AboutMePage.css"
 import InfoCardLarge from "./InfoCardLarge";
-import { educationText, motivationText, aboutMeText, joblyText, tweebler } from "./texts/bioTexts"
+import { educationText, motivationText, aboutMeText, joblyText, tweebler, thisSite } from "./texts/bioTexts"
 import PhotoCard from "./PhotoCard";
 
 const containerVariants = {
@@ -34,7 +34,7 @@ function AboutMePage() {
         exit="exit"
       >
         <AboutMeCard title={"About Me"} textbody={aboutMeText} />
-        <div className="AboutMePage Cards">
+        <div className="AboutMePage Cards d-flex flex-nowrap">
           <InfoCard title="Education" textbody={educationText} />
           <h1 className="AboutMePage">.</h1>
           <InfoCard title="Motivation" textbody={motivationText} />
@@ -47,6 +47,7 @@ function AboutMePage() {
         <h1 className="AboutMePage">.</h1>
         <InfoCard title="Tweebler 🦤 " textbody={tweebler}/>
         <h1 className="AboutMePage">.</h1>
+        <InfoCard title="This Website! " textbody={thisSite}/>
         <h1 className="AboutMePage">.</h1>
     
     </Container>

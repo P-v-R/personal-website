@@ -22,9 +22,7 @@ function PhotoCard() {
         bottom: 1,
       }}
     >
-
       <Card body className="PhotoCard">
-
         <CardImg src={skyPhoto}></CardImg>
         <h2 className="PhotoCardTitle">Projects</h2>
       </Card>
