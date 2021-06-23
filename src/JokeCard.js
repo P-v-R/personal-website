@@ -10,7 +10,14 @@ import { motion } from "framer-motion"
 import { Card, CardTitle, Button } from 'reactstrap';
 
 
-
+/** JokeCard 
+ *    STATE: 
+ *      joke - contains joke and tagline(answer) in array
+ *      newJokeCount - increases everytime a new joke is requested 
+ *                     to trigger useEffect and future metric tracking
+ * 
+ *    useEffect - calls jokeAPI to get a new joke 
+*/
 function JokeCard() {
   const [joke, setJoke] = useState([]);
   const [newJokeCount, setNewJokeCount] = useState(0);
