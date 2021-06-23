@@ -1,9 +1,8 @@
 .NavBarMain{
-  padding-left: 2%;
+  padding-left: 5%;
   background-color:#fff0e5;
   
 } 
-
 
 .border.border-dark{
   border-radius: 0%;
@@ -17,6 +16,13 @@
   font-weight: lighter;
 }
 
-NavLink{
-  color:pink;
+.nav-link{
+  border-bottom: solid 3px #fff0e5;
+}
+
+.nav-link:hover{
+  border-bottom: solid 3px black;
+}
+.dropLink{
+  text-decoration: none;
 }

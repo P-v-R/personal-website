@@ -1,0 +1,62 @@
+.JokeContainer{
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.JokeCard.card.card-body{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  padding-bottom: 10%;
+  padding:5%;
+  border-radius: 0%;
+  width:100%;
+  font-size: 1.5em;
+  transition: all .2s ease-in-out;
+}
+.JokeCard.card.card-body:hover{
+  box-shadow: -10px 10px 0px -2px black;
+	transform: translate(5px, -1px);
+}
+
+.JokeCard-Text{
+  font-weight: lighter;
+  font-size: .75em;
+};
+
+.JokeCard-Button.btn:hover{
+  background-color: rgb(122, 122, 122);
+}
+
+
+.jokeDiv{
+  display: flex;
+}
+.JokeAnswerDiv{
+  background-color: black;
+  color:antiquewhite;
+  padding-right: 5%;
+}
+
+.JokeTagline{
+  position: absolute;
+  color: black;
+  font-size: .9em;
+  z-index: -1;
+}
+
+.jokeReset{
+  margin-left: 90%;
+  font-size: 2em;
+}
+
+
+.TaglineDiv{
+  background-color: black;
+  color:black;
+  transition-timing-function: ease-in-out;
+}
+.TaglineDiv:active{
+  background-color: white;
+}

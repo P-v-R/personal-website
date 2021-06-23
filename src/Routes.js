@@ -4,6 +4,7 @@ import AboutMePage from "./AboutMePage";
 import HomePage from "./HomePage";
 import { AnimatePresence } from "framer-motion"
 import ContactForm from "./ContactForm";
+import JokeCard from "./JokeCard";
 
 
 /** Site-wide routes.
@@ -27,6 +28,9 @@ function Routes() {
           </Route>
           <Route exact path="/contact">
             <ContactForm />
+          </Route>
+          <Route exact path="/joke">
+            <JokeCard />
           </Route>
           <Redirect to="/" />
         </Switch>

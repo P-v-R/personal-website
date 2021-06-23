@@ -8,6 +8,7 @@ import InfoCardLarge from "./InfoCardLarge";
 import { educationText, motivationText, aboutMeText, joblyText, tweebler, thisSite } from "./texts/bioTexts"
 import PhotoCard from "./PhotoCard";
 
+/** reusable framer motion variants to incline on card renders */
 const containerVariants = {
   hidden: {
     opacity: 0,
@@ -24,6 +25,16 @@ const containerVariants = {
     }
   }
 }
+
+/** AboutMePage 
+ *    Where all smaller components are rendered on the about me experience
+ * 
+ *    renders:
+ *      AboutMeCard
+ *      InfoCard
+ *      InfoCardLarge
+ *      PhotoCard
+ */
 function AboutMePage() {
   return (
     <Container>

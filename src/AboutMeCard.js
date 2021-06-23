@@ -6,7 +6,10 @@ import "./AboutMeCard.css"
 
 import { Card, CardTitle } from 'reactstrap';
 
-
+/** AboutMeCards 
+ *    main component header in the about me page greeting user to 
+ *    several smaller cards underneath it. fades in on render
+ */
 function AboutMeCard({title, textbody}){
 
   return (

@@ -67,14 +67,14 @@ function NavBarMain() {
               </DropdownToggle>
               <DropdownMenu className="border border-dark dropDown" right>
                 <DropdownItem className="NavBar-menu">
-                  <NavLink style={{ color: "black" }} to="/aboutme">Option 1</NavLink>
+                  <Link className="dropLink" style={{ color: "black" }} to="/aboutme">Who am I?</Link>
                 </DropdownItem>
                 <DropdownItem className="NavBar-menu">
-                  <NavLink style={{ color: "black" }} to="/aboutme">Option 2</NavLink>
+                  <Link className="dropLink" style={{ color: "black" }} to="/joke">Tell me A Joke!</Link>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  Reset
+                  Home
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>

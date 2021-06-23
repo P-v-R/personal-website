@@ -10,10 +10,12 @@ import NavBarMain from "./NavBarMain";
 import Routes from "./Routes";
 import './App.css';
 
-library.add(fab)
+library.add(fab) // font awesome brands
 
 
-
+/** Renders routes and navbar that remain 
+ *  present throughout sight
+ */
 function App() {
   return (
     <div className="AppBody">

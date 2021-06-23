@@ -28,9 +28,9 @@ function ContactForm(){
 
   return (
     <motion.div className="ContactFormBody"
-      animate={{opacity:1}}
-      initial={{opacity:0}}
-      transition={{delay:.75}}>
+      animate={{x:0}}
+      initial={{x:2000}}
+      transition={{delay:.5}}>
       <h2 className="ContactFormMessage">Contact Me</h2>
       <Form className="ContactForm" onChange={handleChange} onSubmit={handleSubmit}>
         <FormGroup>
@@ -57,8 +57,10 @@ function ContactForm(){
           />
         </FormGroup>
       
-        
+      <motion.div
+        whileTap={{scale:.99}}>
       <Button className="ContactFormButton">Send!</Button>
+      </motion.div>
     </Form>
   </motion.div>
 );
