@@ -15,13 +15,7 @@ function InfoCard({ title, textbody }) {
     animate={{ y: 0 , opacity: 1}}
     initial={{ y: 2000, opacity:0 }}
     transition={{ delay: 1 , duration: 2 }}
-    drag
-      dragConstraints={{
-        top: -.5,
-        left: -.5,
-        right: .5,
-        bottom: .5,
-      }}>
+    >
 
       <Card body className="InfoCard text-center border border-dark">
         <CardTitle tag="h2">{title}</CardTitle>

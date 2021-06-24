@@ -14,13 +14,7 @@ function PhotoCard() {
     <motion.div
       animate={{ x: 0 }}
       initial={{ x: 2000 }}
-      drag
-      dragConstraints={{
-        top: -1,
-        left: -1,
-        right: 1,
-        bottom: 1,
-      }}
+      
     >
       <Card body className="PhotoCard">
         <CardImg src={skyPhoto}></CardImg>

@@ -21,13 +21,7 @@ function InfoCardLarge() {
       animate={{ y: 0, opacity: 1 }}
       initial={{ y: 2000, opacity: 0 }}
       transition={{ delay: 1, duration: 3 }}
-      drag
-      dragConstraints={{
-        top: -1,
-        left: -1,
-        right: 1,
-        bottom: 1,
-      }}>
+      >
       <Card body className="InfoCardLarge text-center border border-dark">
         <CardTitle tag="h2">Skills</CardTitle>
         <div className="InfoCardLarge-Text">
@@ -44,7 +38,7 @@ function InfoCardLarge() {
           <ProgressBar percent={95} title={"MacOs"} rating={"🍎"} />
           <ProgressBar percent={95} title={"Adobe Creative suite "} rating={"🎨"} />
           <ProgressBarSpecial
-            percent={50}
+            percent={75}
             title={"Skills to improve on?"}
             rating={"Always Improving!"}
           />

@@ -17,13 +17,6 @@ function AboutMeCard({title, textbody}){
     <motion.div
       animate={{ x: 0 , opacity: 1}}
       initial={{ x: - 2000, opacity:0 }}
-      drag
-      dragConstraints={{
-        top: -1,
-        left: -1,
-        right: 1,
-        bottom: 1,
-      }}
     >
       <Card body className="AboutMeCard text-center border border-dark">
         <CardTitle tag="h2">{title}</CardTitle>
