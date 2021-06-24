@@ -41,7 +41,7 @@ const containerVariants = {
 function NavBarMain() {
   const [isOpen, setIsOpen] = useState(false);
   const name = "<Perryvon/>"
-  
+
   const toggle = () => setIsOpen(!isOpen);
 
   return (
@@ -63,14 +63,20 @@ function NavBarMain() {
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
-                About Me
+                More
               </DropdownToggle>
               <DropdownMenu className="border border-dark dropDown" right>
                 <DropdownItem className="NavBar-menu">
-                  <Link className="dropLink" style={{ color: "black" }} to="/aboutme">Who am I?</Link>
+                  <Link className="dropLink"
+                    style={{ color: "black" }}
+                    to="/resume">
+                    Resume</Link>
                 </DropdownItem>
                 <DropdownItem className="NavBar-menu">
-                  <Link className="dropLink" style={{ color: "black" }} to="/joke">Tell me A Joke!</Link>
+                  <Link className="dropLink"
+                    style={{ color: "black" }}
+                    to="/joke">
+                    Tell me A Joke!</Link>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>

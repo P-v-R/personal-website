@@ -6,7 +6,7 @@ import { Card, CardTitle, CardText } from 'reactstrap';
 import "./HeaderCard.css"
 
 
-const HeaderCard = ({ clickHandler, textbody }) => {
+const HeaderCard = ({ clickHandler, textbody, greeting="Howdy!" }) => {
 // const dateToFormat = "2021-05-18T19:31:55Z"
 
 
@@ -24,7 +24,7 @@ const HeaderCard = ({ clickHandler, textbody }) => {
     >
 
       <Card body className="HeaderCard text-center border border-dark">
-        <CardTitle tag="h1">Howdy!</CardTitle>
+        <CardTitle tag="h1">{greeting}</CardTitle>
         <CardText className="HeaderCard-Text">
           {textbody}
           </CardText>

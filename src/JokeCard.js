@@ -51,10 +51,17 @@ function JokeCard() {
         }}>
 
         <Card body className="JokeCard text-center border border-dark">
-          <p onClick={resetJoke} className="jokeReset">↩︎</p>
+          <motion.p
+            whileHover={{ scale: 1.2,
+                          x: 10 }}
+            whileTap={{ scale: 0.8 }}
+            onClick={resetJoke} 
+            className="jokeReset">
+            👉</motion.p>
           <CardTitle tag="h2">{joke[0]}</CardTitle>
           <div className="TaglineDiv">
             <p>{joke[1]}</p>
+            <h4>click & hold for answer</h4>
           </div>
         </Card>
       </motion.div>

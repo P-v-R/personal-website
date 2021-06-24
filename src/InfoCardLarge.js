@@ -38,6 +38,7 @@ function InfoCardLarge() {
           <ProgressBar percent={95} title={"React"} rating={"🔥"} />
           <ProgressBar percent={95} title={"Node.js"} rating={"🤌"} />
           <ProgressBar percent={95} title={"Flask"} rating={"👀"} />
+          <ProgressBar percent={95} title={"Django"} rating={"🙀"} />
           <ProgressBar percent={95} title={"SQL"} rating={"📈"} />
           <ProgressBar percent={95} title={"Git"} rating={"🔨"} />
           <ProgressBar percent={95} title={"MacOs"} rating={"🍎"} />

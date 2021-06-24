@@ -1,7 +1,8 @@
 import axios from "axios";
 import SECRET_KEY_JOKE_API from "./secret_key";
 
-const BASE_JOKE_URL = "https://dad-jokes.p.rapidapi.com/random/joke"
+const BASE_JOKE_URL = "https://dad-jokes.p.rapidapi.com/joke/type/programming"
+let jokeCount = 0;
 
 
 /** API Class.
@@ -32,14 +33,14 @@ class JokeApi {
   /** Get a random joke from can i haz dad joke API. */
 
   static async getJoke() {
-  //  let jokeRes = axios.request(options).then(function (response) {
-  //     console.log("--->", response.data.body);
-  //   }).catch(function (error) {
-  //     console.error(error);
-  //   });
+    //a pi only has 19 programming jokes, 
+    // reset jokeCount to 0 when it hits 18
+    if(jokeCount >= 18) jokeCount = 0; 
 
     let resp = await axios.request(options)
-    let jokeArr = [resp.data.body[0].setup, resp.data.body[0].punchline]
+    let jokeArr = [resp.data.body[jokeCount].setup, resp.data.body[jokeCount].punchline]
+    jokeCount++
+    
     return jokeArr;
   }
 
