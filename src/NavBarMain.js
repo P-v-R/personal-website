@@ -80,7 +80,10 @@ function NavBarMain() {
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  Home
+                <Link className="dropLink"
+                    style={{ color: "black" }}
+                    to="/">
+                    Home</Link>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
