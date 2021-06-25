@@ -15,7 +15,9 @@ import {
 } from 'reactstrap';
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+{/* <FontAwesomeIcon className="icon" icon={['fab', 'github']} size="2x" /> */}
 
 // logic to fade into on page reload
 const containerVariants = {
@@ -31,6 +33,7 @@ const containerVariants = {
     transition: { ease: "easeInOut" }
   }
 }
+
 
 /**
  * NavBarMain
@@ -61,6 +64,7 @@ function NavBarMain() {
             <NavItem>
               <Link className="nav-link" to="/contact">Contact</Link>
             </NavItem>
+
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
                 More
@@ -80,13 +84,19 @@ function NavBarMain() {
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                <Link className="dropLink"
+                  <Link className="dropLink"
                     style={{ color: "black" }}
                     to="/">
                     Home</Link>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
+            <NavLink href="https://github.com/P-v-R">
+              <FontAwesomeIcon className="iconLink" icon={['fab', 'github']} />
+            </NavLink>
+            <NavLink href="https://www.linkedin.com/in/perry-von-rosenvinge-65a27a89/">
+              <FontAwesomeIcon className="iconLink" icon={['fab', 'linkedin']} />
+            </NavLink>
           </Nav>
         </Collapse>
       </Navbar>

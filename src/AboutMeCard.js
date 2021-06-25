@@ -10,19 +10,20 @@ import { Card, CardTitle } from 'reactstrap';
  *    main component header in the about me page greeting user to 
  *    several smaller cards underneath it. fades in on render
  */
-function AboutMeCard({title, textbody}){
+function AboutMeCard({ title, textbody }) {
 
   return (
 
     <motion.div
-      animate={{ x: 0 , opacity: 1}}
-      initial={{ x: - 2000, opacity:0 }}
+      animate={{ x: 0, opacity: 1 }}
+      initial={{ x: - 2000, opacity: 0 }}
     >
+
       <Card body className="AboutMeCard text-center border border-dark">
         <CardTitle tag="h2">{title}</CardTitle>
         <div className="AboutMeCard-Text">
           {textbody}
-          </div>
+        </div>
         <motion.div
           animate={{ x: 0 }}
           initial={{ x: - 2000 }}

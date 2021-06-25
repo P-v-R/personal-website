@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import AboutMeCard from "./AboutMeCard";
 import { motion } from "framer-motion"
 import InfoCard from "./InfoCard";
@@ -45,22 +45,25 @@ function AboutMePage() {
         exit="exit"
       >
         <AboutMeCard title={"About Me"} textbody={aboutMeText} />
-        <div className="AboutMePage Cards d-flex flex-nowrap">
-          <InfoCard title="Education" textbody={educationText} />
-          <h1 className="AboutMePage">.</h1>
-          <InfoCard title="Motivation" textbody={motivationText} />
-        </div>
+        <Row>
+          <Col >
+            <InfoCard  title="Education" textbody={educationText} />
+          </Col>
+          <Col >
+            <InfoCard  title="Motivation" textbody={motivationText} />
+          </Col>
+        </Row>
         <InfoCardLarge />
         <PhotoCard />
       </motion.div>
-      
-        <InfoCard title="Jobly JobFinder 🔎" textbody={joblyText} />
-        <h1 className="AboutMePage">.</h1>
-        <InfoCard title="Tweebler 🦤 " textbody={tweebler}/>
-        <h1 className="AboutMePage">.</h1>
-        <InfoCard title="This Website! " textbody={thisSite}/>
-        <h1 className="AboutMePage">.</h1>
-    
+
+      <InfoCard title="Jobly JobFinder 🔎" textbody={joblyText} />
+      <h1 className="AboutMePage">.</h1>
+      <InfoCard title="Tweebler 🦤 " textbody={tweebler} />
+      <h1 className="AboutMePage">.</h1>
+      <InfoCard title="This Website! " textbody={thisSite} />
+      <h1 className="AboutMePage">.</h1>
+
     </Container>
 
 

@@ -1,7 +1,8 @@
 const educationText = [<li>Rithm School Full Stack Development Program</li>,
+<li>Internship developing the Rithm School student information portal </li>,
 <li>Code Academy Python Computer Science Course</li>,
 <li>Code Academy Front End Development Course</li>,
-<li>Over 2,000 hours of development in 2020 & 2021</li>]
+<li>Over 2,000 hours of development in 2020 & 2021. and counting!</li>]
 
 const motivationText = <h4>A paragraph about the things that inspire and motivate me as a
   developer, something to show that coding is more than just a means

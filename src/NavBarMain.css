@@ -1,7 +1,7 @@
 .NavBarMain{
   padding-left: 5%;
   background-color:#fff0e5;
-  font-size: 18px;
+  font-size: 22px;
   
 } 
 
@@ -15,6 +15,7 @@
 
 .NavBar-menu.dropdown-item{
   font-weight: lighter;
+  font-size: 20px;
 }
 
 .nav-link{
@@ -26,4 +27,9 @@
 }
 .dropLink{
   text-decoration: none;
+  font-size: 20px;
+}
+
+.iconLink{
+  font-size: 1.5em;
 }
