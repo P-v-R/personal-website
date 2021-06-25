@@ -12,7 +12,7 @@ import "./ProgressBar.css"
  * same as ProgressBar / different color on hover / further hover
  */
 function ProgressBarSpecial({ percent, title, rating }) {
-  console.log("percent === >", percent)
+  // console.log("percent === >", percent)
   return (
     <div>
       <div className="ProgressLogo">{rating}</div>
