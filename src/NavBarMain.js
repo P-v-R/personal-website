@@ -17,8 +17,6 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-{/* <FontAwesomeIcon className="icon" icon={['fab', 'github']} size="2x" /> */}
-
 // logic to fade into on page reload
 const containerVariants = {
   hidden: {

@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 
 
-import { Card, CardTitle, Button } from 'reactstrap';
+import { Card, CardTitle} from 'reactstrap';
 
 
 /** JokeCard 

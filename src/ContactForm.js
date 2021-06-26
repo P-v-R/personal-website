@@ -23,7 +23,6 @@ function ContactForm(){
       ...fData,
       [name]: value.trim(),
     }));
-    
   }
 
   return (

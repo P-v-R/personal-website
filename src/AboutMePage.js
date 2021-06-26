@@ -5,8 +5,9 @@ import { motion } from "framer-motion"
 import InfoCard from "./InfoCard";
 import "./AboutMePage.css"
 import InfoCardLarge from "./InfoCardLarge";
-import { educationText, motivationText, aboutMeText, joblyText, tweebler, thisSite } from "./texts/bioTexts"
+import { educationText, motivationText, aboutMeText, joblyText, warblerText, thisSite } from "./texts/bioTexts"
 import PhotoCard from "./PhotoCard";
+import ProjectCard from "./ProjectCard";
 
 /** reusable framer motion variants to incline on card renders */
 const containerVariants = {
@@ -47,21 +48,30 @@ function AboutMePage() {
         <AboutMeCard title={"About Me"} textbody={aboutMeText} />
         <Row>
           <Col >
-            <InfoCard  title="Education" textbody={educationText} />
+            <InfoCard title="Education" textbody={educationText} />
           </Col>
           <Col >
-            <InfoCard  title="Motivation" textbody={motivationText} />
+            <InfoCard title="Motivation" textbody={motivationText} />
           </Col>
         </Row>
         <InfoCardLarge />
         <PhotoCard />
       </motion.div>
 
-      <InfoCard title="Jobly JobFinder 🔎" textbody={joblyText} />
+      <ProjectCard title="Jobly JobFinder 🔎"
+        description={joblyText}
+        link={"http://jobly-jobfinder.surge.sh/"}
+        ghLink={"https://github.com/P-v-R/react-jobly-frontend"} />
       <h1 className="AboutMePage">.</h1>
-      <InfoCard title="Tweebler 🦤 " textbody={tweebler} />
+      <ProjectCard title="Warbler 🦤 "
+        description={warblerText}
+        link={"http://warbler-kr.herokuapp.com/"}
+        ghLink={"https://github.com/P-v-R/warbler"} />
       <h1 className="AboutMePage">.</h1>
-      <InfoCard title="This Website! " textbody={thisSite} />
+      <ProjectCard title="This Website! "
+        description={thisSite}
+        Link={"https://github.com/P-v-R/personal-website"}
+        ghLink={"https://github.com/P-v-R/personal-website"} />
       <h1 className="AboutMePage">.</h1>
 
     </Container>
