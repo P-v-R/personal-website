@@ -1,40 +1,41 @@
-.InfoCard.card.card-body{
+.ProjectCard.card.card-body{
 
   height:fit-content;
   width: auto;
   font-size: 1.2em;
-  margin-bottom: 4%;
+  margin-top: 4%;
+
   transition: all .2s ease-in-out;
 }
 
-.InfoCard.card.card-body:hover{
+.ProjectCard.card.card-body:hover{
   box-shadow: -10px 10px 0px -2px black;
 	transform: translate(5px, -1px);
 }
 
-.InfoCard-Text{
+.ProjectCard-Text{
   font-weight: lighter;
   font-size: 1.2em;
   
 };
 
-.InfoCard-Button.btn:hover{
+.ProjectCard-Button.btn:hover{
   background-color: rgb(122, 122, 122);
 }
 
-.InfoCard li{
+.ProjectCard li{
   background-color: #b7b7a4 ;
   margin-top: 3%;
   border:solid 2px white;
 }
 
-.InfoCard li:hover{
+.ProjectCard li:hover{
   background-color: #b7b7a4 ;
   border:solid 2px black;
   margin-top: 3%;
 }
 
-.InfoCard a{
+.ProjectCard a{
   font-weight: bolder;
   color:rgb(0, 94, 117)
 }

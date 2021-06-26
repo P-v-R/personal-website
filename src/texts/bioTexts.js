@@ -1,20 +1,17 @@
 const educationText = [<li>Rithm School Full Stack Development Program</li>,
 <li>Internship developing the Rithm School student information portal </li>,
-<li>Code Academy Python Computer Science Course</li>,
-<li>Code Academy Front End Development Course</li>,
+<li>Code Academy Python Computer Science & Javascript front end certificate</li>,
+<li>LinkedIn Learning project management certificate</li>,
 <li>Over 2,000 hours of development in 2020 & 2021! and counting!</li>]
 
-const motivationText = <h4>A paragraph about the things that inspire and motivate me as a
-  developer, something to show that coding is more than just a means
-  to employment but rather a passion. Focus on clean, easy to use, secure
-  and accessible applications with an emphasis on mindful design and meaningful
-  user experience. BLAH BLAH BLAH BLAH BLAH BLAH </h4>
+const motivationText = "Simple & beautiful design. Accessible web pages equal to all, Well documented functions, Consistency in code, \
+Great testing coverage, Improving wherever can be improved, Being apart of a team, Time spend outside and A really good meal! "
 
 
 const howdyText = "I’m Perry—a Web Developer, Photographer, and Graphic Designer based in Los Angeles, California. "
 
-const aboutMeText = "sample text about the things i like tod what makes me great sample text abouand what makes me great\
-sample text about the things i hat makes me great sample text about the things i like to do and what makes me great"
+const aboutMeText = "👋 Hey there! I'm a front end focused web developer with a passion for beautiful design that \
+is accessible to all, and enjoyed by many. A team player, Lover of video games, pursuer of positive impact, and overall decent human"
 
 const joblyText = "A React Based CRUD application for finding and applying to\
   *artificial job postings. powered with\

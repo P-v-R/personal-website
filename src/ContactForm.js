@@ -24,6 +24,7 @@ function ContactForm(){
       [name]: value.trim(),
     }));
   }
+  console.log("form data -->", formData)
 
   return (
     <motion.div className="ContactFormBody"

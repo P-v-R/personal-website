@@ -2,14 +2,13 @@ import React from "react";
 import { Card, CardImg } from 'reactstrap';
 import { motion } from "framer-motion"
 import "./PhotoCard.css"
-import skyPhoto from "./assets/sky.png"
 
 /**
  * PhotCard
  * 
  * visual display card
  */
-function PhotoCard() {
+function PhotoCard({photoSrc, title}) {
   return (
     <motion.div
       animate={{ x: 0 }}
@@ -17,8 +16,8 @@ function PhotoCard() {
       
     >
       <Card body className="PhotoCard">
-        <CardImg src={skyPhoto}></CardImg>
-        <h2 className="PhotoCardTitle">Projects</h2>
+        <CardImg src={photoSrc}></CardImg>
+        <h2 className="PhotoCardTitle">{title}</h2>
       </Card>
 
     </motion.div>

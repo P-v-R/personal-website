@@ -8,6 +8,8 @@ import InfoCardLarge from "./InfoCardLarge";
 import { educationText, motivationText, aboutMeText, joblyText, warblerText, thisSite } from "./texts/bioTexts"
 import PhotoCard from "./PhotoCard";
 import ProjectCard from "./ProjectCard";
+import skyPhoto from "./assets/sky.png"
+import seaPhoto from "./assets/sea.png"
 
 /** reusable framer motion variants to incline on card renders */
 const containerVariants = {
@@ -52,10 +54,11 @@ function AboutMePage() {
           </Col>
           <Col >
             <InfoCard title="Motivation" textbody={motivationText} />
+            <PhotoCard photoSrc={seaPhoto} title="The technical stuff 👇"/>            
           </Col>
         </Row>
         <InfoCardLarge />
-        <PhotoCard />
+        <PhotoCard photoSrc={skyPhoto} title="Projects" />
       </motion.div>
 
       <ProjectCard title="Jobly JobFinder 🔎"
