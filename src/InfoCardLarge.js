@@ -7,6 +7,7 @@ import ProgressBarSpecial from "./ProgressBarSpecial";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+
 /**
  * InfoCardLarge
  *  large display card to display skills

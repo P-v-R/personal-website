@@ -1,21 +1,26 @@
 import React from 'react';
-// import Moment from 'react-moment';
-import { Container, Card, CardTitle, CardText } from 'reactstrap';
-import "./HeaderCard.css"
+import "./Resume.css"
+import resume from "./assets/demoRes.png"
 
+import {
+  Row, Col
+} from 'reactstrap';
 
-function Resume(){
-
+const Resume = () => {
   return (
-    <Container>
+    <div className="ResumeBody ">
+      <a className="ResumeDownload" href={resume} download>  <h3> download Resume </h3> </a>
 
-    <Card>
-      <CardTitle>Resume Goes Here</CardTitle>
-      <CardText>text blah blah</CardText>
-    </Card>
+      <img
+        src={resume}
+        className="img-fluid"
+        alt="my resume"
+        style={{ width: "900px" }}
+      />
 
-    </Container>
-  )
-}
 
-export default Resume;
+    </div>
+  );
+};
+
+export default Resume

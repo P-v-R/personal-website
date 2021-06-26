@@ -12,9 +12,9 @@ function InfoCard({ title, textbody }) {
 
   return (
     <motion.div className="InfoCardDiv"
-    animate={{ y: 0 , opacity: 1}}
-    initial={{ y: 2000, opacity:0 }}
-    transition={{ delay: 1 , duration: 2 }}
+    animate={{  opacity: 1 }}
+    initial={{  opacity: 0 }}
+    transition={{ delay:.5, duration: 2.5 }}
     >
 
       <Card body className="InfoCard text-center border border-dark">

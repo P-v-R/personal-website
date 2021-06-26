@@ -11,8 +11,9 @@ import "./PhotoCard.css"
 function PhotoCard({photoSrc, title}) {
   return (
     <motion.div
-      animate={{ x: 0 }}
-      initial={{ x: 2000 }}
+    animate={{  opacity: 1 }}
+    initial={{  opacity: 0 }}
+    transition={{ ease: "easeOut", duration: 3, delay:2 }}
       
     >
       <Card body className="PhotoCard">
