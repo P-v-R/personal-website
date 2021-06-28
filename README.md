@@ -6,7 +6,7 @@ over stimulating. I have a lot of things I would like to improve on this site bu
 a work in progress, Adding some more API interaction outside of the "tell me a joke" section and possibly adding a blog section are 
 some things i have on the horizon. 
 
-**TODO**
+**TODO** - ***whenever I have time I plan on getting to these***
  * clean up the structuring of the import statements and make sure they are all consistent across components 
  * ADD MORE TESTS! (always a goal of mine)
  * Compile all CSS files into a separate folder so its a little easier to navigate at a glance in the IDE
