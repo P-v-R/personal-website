@@ -1,42 +1,31 @@
-.ProjectCard.card.card-body{
-
-  height:fit-content;
+.ProjectCard.card.card-body {
+  height: fit-content;
   width: auto;
   font-size: 1.2em;
   margin-top: 4%;
-
   transition: all .2s ease-in-out;
 }
 
-.ProjectCard.card.card-body:hover{
+.ProjectCard.card.card-body:hover {
   box-shadow: -10px 10px 0px -2px black;
-	transform: translate(5px, -1px);
+  transform: translate(5px, -1px);
 }
 
-.ProjectCard-Text{
+.ProjectCard-Text {
   font-weight: lighter;
   font-size: 1.2em;
-  
-};
-
-.ProjectCard-Button.btn:hover{
-  background-color: rgb(122, 122, 122);
 }
 
-.ProjectCard li{
-  background-color: #b7b7a4 ;
-  margin-top: 3%;
-  border:solid 2px white;
-}
 
-.ProjectCard li:hover{
-  background-color: #b7b7a4 ;
-  border:solid 2px black;
-  margin-top: 3%;
-}
-
-.ProjectCard a{
+.ProjectCard.a {
   font-weight: bolder;
-  color:rgb(0, 94, 117)
 }
 
+.card-link:hover {
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+
+.card-link {
+  color: rgb(46, 46, 46)
+}

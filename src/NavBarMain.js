@@ -16,6 +16,8 @@ import {
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFileCsv } from '@fortawesome/free-solid-svg-icons'
+
 
 // logic to fade into on page reload
 const containerVariants = {
@@ -94,6 +96,9 @@ function NavBarMain() {
             </NavLink>
             <NavLink href="https://www.linkedin.com/in/perry-von-rosenvinge-65a27a89/">
               <FontAwesomeIcon className="iconLink" icon={['fab', 'linkedin']} />
+            </NavLink>
+            <NavLink href="/resume">
+            <FontAwesomeIcon className="iconLink" icon={faFileCsv} />
             </NavLink>
           </Nav>
         </Collapse>
