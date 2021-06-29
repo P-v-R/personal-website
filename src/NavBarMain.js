@@ -52,7 +52,7 @@ function NavBarMain() {
       animate="visible"
       exit="exit">
       <Navbar className="NavBarMain border-bottom border-dark" light expand="md">
-        <NavbarBrand href="/">{name}</NavbarBrand>
+        <NavbarBrand className="name-logo" href="/"><h2>{name}</h2></NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>

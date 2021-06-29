@@ -60,7 +60,6 @@ function AboutMePage() {
         <InfoCardLarge />
         <PhotoCard photoSrc={skyPhoto} title="Projects" />
       </motion.div>
-
       <ProjectCard title="Jobly JobFinder 🔎"
         description={joblyText}
         link={"http://jobly-jobfinder.surge.sh/"}

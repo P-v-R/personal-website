@@ -14,13 +14,6 @@ const HeaderCard = ({ clickHandler, textbody, greeting="Howdy!" }) => {
     <motion.div
     animate={{ x: 0 }}
     initial={{ x: 2000 }}
-      drag
-      dragConstraints={{
-        top: -1,
-        left: -1,
-        right: 1,
-        bottom: 1,
-      }}
     >
 
       <Card body className="HeaderCard text-center border border-dark">

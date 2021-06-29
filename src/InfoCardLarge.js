@@ -19,8 +19,8 @@ function InfoCardLarge() {
   return (
 
     <motion.div className="InfoCardLargeDiv"
-      animate={{ y: 0, opacity: 1 }}
-      initial={{ y: 2000, opacity: 0 }}
+      animate={{  opacity: 1 }}
+      initial={{  opacity: 0 }}
       transition={{ delay: 1, duration: 3 }}
       >
       <Card body className="InfoCardLarge text-center border border-dark">
