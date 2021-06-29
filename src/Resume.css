@@ -1,10 +1,13 @@
 .ResumeBody{
-justify-content: center;
-margin:4%
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .5%;
+  width:85vh;
+  max-width: 99%;
 }
 
 .ResumeDownload{
   color:black;
-  margin-top: 4%;
 }
 

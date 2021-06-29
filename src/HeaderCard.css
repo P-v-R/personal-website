@@ -5,7 +5,6 @@
   padding:5%;
   border-radius: 0%;
   width:80%;
-  font-size: 2em;
   transition: all .2s ease-in-out;
 }
 .HeaderCard.card.card-body:hover{
@@ -16,6 +15,12 @@
 
 .HeaderCard-Text.card-text{
   font-weight: lighter;
+  font-size: 3vh;
+}
+.HeaderCard-Title.card-title{
+  font-size:5vh;
+  
+
 }
 .HeaderCard-Button.btn{
   border-radius: 0%;
@@ -27,7 +32,7 @@
   color: black;
   border: solid black 1px;
   font-family: 'Roboto Mono', monospace;
-  font-size:70%;
+  font-size:2.5vh;
   width:100%;
 }
 .HeaderCard-Button.btn:hover{

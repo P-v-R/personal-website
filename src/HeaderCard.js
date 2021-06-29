@@ -17,7 +17,7 @@ const HeaderCard = ({ clickHandler, textbody, greeting="Howdy!" }) => {
     >
 
       <Card body className="HeaderCard text-center border border-dark">
-        <CardTitle tag="h1">{greeting}</CardTitle>
+        <CardTitle className="HeaderCard-Title">{greeting}</CardTitle>
         <CardText className="HeaderCard-Text">
           {textbody}
           </CardText>
