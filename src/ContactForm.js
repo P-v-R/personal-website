@@ -63,6 +63,7 @@ function ContactForm() {
             id="from_email"
             placeholder="your@email.com"
             required
+
           />
           <FormFeedback>can't see this</FormFeedback>
           <Label for="exampleEmail">Subject</Label>
@@ -84,7 +85,7 @@ function ContactForm() {
         </FormGroup>
 
         {!sent && <motion.div
-          whileTap={{ scale: 1.1 }}>
+          whileTap={{ scale: .9 }}>
           <Button type="submit" className="ContactFormButton">Send!</Button>
         </motion.div>
         }
