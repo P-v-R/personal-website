@@ -1,8 +1,7 @@
 import axios from "axios";
-import { SECRET_KEY_JOKE_API } from "./secret_key";
 
 const BASE_JOKE_URL = "https://dad-jokes.p.rapidapi.com/joke/type/programming"
-// const BASE_EMAIL_URL = "https://api.emailjs.com/api/v1.0/email/send"
+const JOKE_KEY = process.env.REACT_APP_SECRET_KEY_JOKE_API
 let jokeCount = 0;
 
 
@@ -18,7 +17,7 @@ const options = {
   method: 'GET',
   url: BASE_JOKE_URL,
   headers: {
-    'x-rapidapi-key': SECRET_KEY_JOKE_API,
+    'x-rapidapi-key': JOKE_KEY,
     'x-rapidapi-host': 'dad-jokes.p.rapidapi.com'
   }
 };

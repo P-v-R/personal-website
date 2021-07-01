@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { EMAIL_ID, serviceID, templateID } from "./secret_key";
+// import { EMAIL_ID, serviceID, templateID } from "./secret_key";
 import * as emailjs from "emailjs-com";
 import "./ContactForm.css"
 import { motion } from "framer-motion";
@@ -24,7 +24,10 @@ function ContactForm() {
   function handleSubmit(evt) {
 
     evt.preventDefault()
-    emailjs.sendForm(serviceID, templateID, evt.target, EMAIL_ID)
+    emailjs.sendForm(process.env.REACT_APP_serviceID, 
+                     process.env.REACT_APP_templateID, 
+                     evt.target, 
+                     process.env.REACT_APP_EMAIL_ID)
       .then((result) => {
         console.log(result.status);
         isSent(true)
