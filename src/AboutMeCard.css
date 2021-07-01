@@ -9,11 +9,11 @@
   font-size: 3vh;
   transition: all .2s ease-in-out;
 }
-
+/* 
 .AboutMeCard.card.card-body:hover{
   box-shadow: -10px 10px 0px -2px black;
 	transform: translate(5px, -1px);
-}
+} */
 
 .AboutMeCard-Text.card-text{
   font-weight: lighter;

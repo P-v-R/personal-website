@@ -20,11 +20,11 @@ function ProjectCard({ title, description, link, ghLink }) {
       <Card body className="ProjectCard text-center border border-dark">
         <CardTitle tag="h2">{title}</CardTitle>
         <div className="ProjectCard-Text">
-          <CardLink href={link}>
+          <CardLink href={link} target="_blank">
           {description}
           </CardLink>
         </div>
-        <CardLink href={ghLink}>
+        <CardLink href={ghLink} target="_blank">
           <FontAwesomeIcon className="icon" icon={['fab', 'github']} size="2x"/>
         </CardLink>
       </Card>

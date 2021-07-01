@@ -7,10 +7,10 @@
   transition: all .2s ease-in-out;
 }
 
-.InfoCard.card.card-body:hover{
+/* .InfoCard.card.card-body:hover{
   box-shadow: -10px 10px 0px -2px black;
 	transform: translate(5px, -1px);
-}
+} */
 
 .InfoCard-Text{
   font-weight: lighter;
@@ -28,11 +28,11 @@
   border:solid 2px white;
 }
 
-.InfoCard li:hover{
+/* .InfoCard li:hover{
   background-color: #b7b7a4 ;
   border:solid 2px black;
   margin-top: 3%;
-}
+} */
 
 .InfoCard a{
   font-weight: bolder;

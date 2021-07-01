@@ -91,13 +91,15 @@ function NavBarMain() {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <NavLink href="https://github.com/P-v-R">
+            <NavLink href="https://github.com/P-v-R" target="_blank">
               <FontAwesomeIcon className="iconLink" icon={['fab', 'github']} />
             </NavLink>
-            <NavLink href="https://www.linkedin.com/in/perry-von-rosenvinge-65a27a89/">
+            <NavLink 
+              href="https://www.linkedin.com/in/perry-von-rosenvinge-65a27a89/" 
+              target="_blank">
               <FontAwesomeIcon className="iconLink" icon={['fab', 'linkedin']} />
             </NavLink>
-            <NavLink href="/resume">
+            <NavLink href="/resume" target="_blank">
             <FontAwesomeIcon className="iconLink" icon={faFileCsv} />
             </NavLink>
           </Nav>

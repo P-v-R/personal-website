@@ -16,7 +16,9 @@
   font-size: 1.2em;
 }
 
-
+.icon:hover{
+  color:grey;
+}
 .ProjectCard.a {
   font-weight: bolder;
 }

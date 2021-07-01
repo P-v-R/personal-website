@@ -16,6 +16,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
  */
 function InfoCardLarge() {
 
+  let hoverEffect = {scale: 1.2, rotate:5,
+  transition: { duration: .4 }}
+
   return (
 
     <motion.div className="InfoCardLargeDiv"
@@ -46,47 +49,47 @@ function InfoCardLarge() {
         </div>
         <div className="infoCardLargeBrands d-flex flex-wrap" >
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.2 }}>
+            whileHover={hoverEffect}>
             <FontAwesomeIcon className="icon" icon={['fab', 'react']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.2 }}>
+            whileHover={hoverEffect}>
             <FontAwesomeIcon className="icon" icon={['fab', 'js']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.2 }}>
+            whileHover={hoverEffect}>
             <FontAwesomeIcon className="icon" icon={['fab', 'python']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.2 }}>
+            whileHover={hoverEffect}>
             <FontAwesomeIcon className="icon" icon={['fab', 'apple']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.2 }}>
+            whileHover={hoverEffect}>
             <FontAwesomeIcon className="icon" icon={['fab', 'github']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.2 }}>
+            whileHover={hoverEffect}>
             <FontAwesomeIcon className="icon" icon={['fab', 'node-js']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.2 }}>
+            whileHover={hoverEffect}>
             <FontAwesomeIcon className="icon" icon={['fab', 'css3-alt']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.2 }}>
+            whileHover={hoverEffect}>
             <FontAwesomeIcon className="icon" icon={['fab', 'html5']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.2 }}>
+            whileHover={hoverEffect}>
             <FontAwesomeIcon className="icon" icon={['fab', 'aws']} size="3x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.2 }}>
+            whileHover={hoverEffect}>
             <FontAwesomeIcon className="icon" icon={['fab', 'bootstrap']} size="2x" />
           </motion.div>
           <motion.div className="SkillLogo"
-            whileHover={{ scale: 1.2 }}>
+            whileHover={hoverEffect}>
             <FontAwesomeIcon className="icon" icon={['fab', 'docker']} size="2x" />
           </motion.div>
         </div>

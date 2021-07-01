@@ -24,6 +24,11 @@
   font-size:1em;
   width:100%;
 }
+.ContactFormButton.btn.btn-secondary:hover{
+  border-radius: 0%;
+  background-color: #ffb703;
+  color: black;
+}
 
 input.ContactFormField{
 border-radius: 0%;

@@ -84,7 +84,7 @@ function ContactForm() {
         </FormGroup>
 
         {!sent && <motion.div
-          whileTap={{ scale: .99 }}>
+          whileTap={{ scale: 1.1 }}>
           <Button type="submit" className="ContactFormButton">Send!</Button>
         </motion.div>
         }
