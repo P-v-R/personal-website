@@ -17,6 +17,9 @@ const containerVariants = {
   }
 }
 function HomePage() {
+  console.log("Hello there! Thanks for checking my website\
+               out, I spent a lot of time on it and think it's\
+               a good reflection of my personality. I hope you enjoy!")
   return (
 
     <motion.div

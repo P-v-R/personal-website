@@ -9,7 +9,7 @@ import { Card, CardTitle, CardLink} from 'reactstrap';
 
 function ProjectCard({ title, description, link, ghLink }) {
 
-  console.log("link ==>",)
+  // console.log("link ==>",)
   return (
     <motion.div className="ProjectCardDiv"
       animate={{ y: 0, opacity: 1 }}
