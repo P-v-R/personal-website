@@ -16,15 +16,21 @@ const SERVICE_ID = process.env.REACT_APP_serviceID;
 const TEMPLATE_ID = process.env.REACT_APP_templateID;
 const EMAIL_ID = process.env.REACT_APP_EMAIL_ID;
 
+
+/** ContactForm :
+ *  state: formData, sent(t/f)
+ * 
+ * uses mailJS to send messages to my email 
+ */
 function ContactForm() {
   const [formData, setFormData] = useState({});
   const [sent, isSent] = useState(false)
 
 
-
+  // handle form inputs on submit and send email 
   function handleSubmit(evt) {
-
     evt.preventDefault()
+    // send form info to emailJS
     emailjs.sendForm(SERVICE_ID, 
                      TEMPLATE_ID, 
                      evt.target, 
@@ -36,7 +42,7 @@ function ContactForm() {
         console.log(error.text);
       });
   }
-
+  // handle individual inputs on forms 
   function handleChange(evt) {
     const { name, value } = evt.target;
     setFormData(fData => ({
@@ -54,9 +60,9 @@ function ContactForm() {
   }
   return (
     <motion.div className="ContactFormBody"
-      animate={{ x: 0 }}
-      initial={{ x: 2000 }}
-      transition={{ delay: .5 }}>
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      transition={{ delay: 1 }}>
       <h2 className="ContactFormMessage">Contact Me</h2>
       <Form className="ContactForm" onChange={handleChange} onSubmit={handleSubmit}>
         <FormGroup>
