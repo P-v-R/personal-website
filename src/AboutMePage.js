@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import InfoCard from "./InfoCard";
 import "./AboutMePage.css"
 import InfoCardLarge from "./InfoCardLarge";
-import { educationText, motivationText, aboutMeText, joblyText, warblerText, thisSite } from "./texts/bioTexts"
+import { educationText, motivationText, aboutMeText, joblyText, warblerText, jeopardyText } from "./texts/bioTexts"
 import PhotoCard from "./PhotoCard";
 import ProjectCard from "./ProjectCard";
 import skyPhoto from "./assets/sky.png"
@@ -72,15 +72,13 @@ function AboutMePage() {
         link={"http://warbler-kr.herokuapp.com/"}
         ghLink={"https://github.com/P-v-R/warbler"} />
       <h1 className="AboutMePage">.</h1>
-      <ProjectCard title="This Website! "
-        description={thisSite}
-        Link={"https://github.com/P-v-R/personal-website"}
-        ghLink={"https://github.com/P-v-R/personal-website"} />
+      <ProjectCard title="JQuery-Jeopardy 🕺"
+        description={jeopardyText}
+        Link={"https://dazzling-austin-dd2ae2.netlify.app/"}
+        ghLink={"https://github.com/P-v-R/Jeopardy-JQuery"} />
       <h1 className="AboutMePage">.</h1>
 
     </Container>
-
-
   )
 }
 

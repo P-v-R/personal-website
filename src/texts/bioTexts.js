@@ -1,6 +1,6 @@
 const educationText = [<li>Rithm School Full Stack Development Program</li>,
 <li>Internship developing the Rithm School student information portal </li>,
-<li>Code Academy Python Computer Science & Javascript front end certificate</li>,
+<li>Code Academy Python Computer Science & Javascript front end certificates</li>,
 <li>LinkedIn Learning project management certificate</li>,
 <li>Over 2,000 hours of development in 2020 & 2021! and counting!</li>]
 
@@ -21,8 +21,10 @@ const warblerText = "A CRUD twitter like website for users to signup, post and l
 back end built on FLASK and a front end built with React. Backend deployed with heroku (allow initial bootup time) and front end \
 deployed via surge"
 
-const thisSite = "Built on React.js, utilizing twitter bootstrap, Githubs API, an API joke generator(check the navbar for a nice joke),\
- Jest testing, framer motion for animation... and many other tools for an optimal user experience"
+// const thisSite = "Built on React.js, utilizing twitter bootstrap, Githubs API, an API joke generator(check the navbar for a nice joke),\
+//  Jest testing, framer motion for animation... and many other tools for an optimal user experience"
+
+const jeopardyText = "A game-show simulator to brush up on your trivia skills! using an open-source Jeopardy API. Built using JQuery, HTML, and CSS... simple as that!"
 
 
-export { educationText, motivationText, howdyText, aboutMeText, joblyText, warblerText, thisSite }
+export { educationText, motivationText, howdyText, aboutMeText, joblyText, warblerText, jeopardyText }

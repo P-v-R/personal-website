@@ -86,12 +86,12 @@ function InfoCardLarge() {
           </motion.div>
           <motion.div className="SkillLogo"
             whileHover={hoverEffect}>
-            <FontAwesomeIcon className="icon" icon={['fab', 'bootstrap']} size="2x" />
+            <FontAwesomeIcon className="icon" icon={['fab', 'bootstrap']} size="3x" />
           </motion.div>
-          <motion.div className="SkillLogo"
+          {/* <motion.div className="SkillLogo"
             whileHover={hoverEffect}>
-            <FontAwesomeIcon className="icon" icon={['fab', 'docker']} size="2x" />
-          </motion.div>
+            <FontAwesomeIcon className="icon" icon={['fab', 'docker']} size="3x" />
+          </motion.div> */}
         </div>
       </Card>
     </motion.div>
