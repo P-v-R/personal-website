@@ -27,7 +27,7 @@ function JokeCard() {
       let jokeRes = await JokeApi.getJoke();
       setJoke(jokeRes);
       // setJoke(['why did chicken cross road?', 'cause he wanted to sukka'])
-      console.log("got joke from api -->", jokeRes);
+      // console.log("got joke from api -->", jokeRes);
     }
     newJoke();
   }, [newJokeCount])

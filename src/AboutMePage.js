@@ -38,6 +38,8 @@ const containerVariants = {
  *      InfoCardLarge
  *      PhotoCard
  */
+
+
 function AboutMePage() {
   return (
     <Container>
