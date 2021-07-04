@@ -83,11 +83,11 @@ function NavBarMain() {
                     Tell me A Joke!</Link>
                 </DropdownItem>
                 <DropdownItem className="NavBar-menu">
-                  <NavLink className="dropLink"
-                    style={{ color: "black", borderBottom:"none" }}
-                    href="https://perryvon.medium.com/"
+                  <Link className="dropLink"
+                    style={{ color: "black" }}
+                    to={{pathname: "https://perryvon.medium.com/"}}
                     target="_blank">
-                    Blog</NavLink>
+                    Blog</Link>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
