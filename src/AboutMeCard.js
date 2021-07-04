@@ -27,7 +27,7 @@ function AboutMeCard({ title, textbody }) {
         <motion.div
           animate={{ x: 0 }}
           initial={{ x: - 2000 }}
-          transition={{ ease: "easeOut", duration: 2 }}
+          transition={{ ease: "easeOut", duration: 1.5 }}
         >
         </motion.div>
       </Card>

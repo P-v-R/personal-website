@@ -13,7 +13,7 @@ function PhotoCard({photoSrc, title}) {
     <motion.div
     animate={{  opacity: 1 }}
     initial={{  opacity: 0 }}
-    transition={{ ease: "easeOut", duration: 3, delay:2 }}
+    transition={{ ease: "easeOut", duration: 1.5, delay:1 }}
       
     >
       <Card body className="PhotoCard">

@@ -14,7 +14,7 @@ function ProjectCard({ title, description, link, ghLink }) {
     <motion.div className="ProjectCardDiv"
       animate={{ y: 0, opacity: 1 }}
       initial={{ y: 2000, opacity: 0 }}
-      transition={{ delay: 1, duration: 2 }}
+      transition={{ delay: 1, duration: 1.5 }}
     >
 
       <Card body className="ProjectCard text-center border border-dark">

@@ -41,7 +41,7 @@ function JokeCard() {
       <motion.div className="JokeCardDiv"
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
-        transition={{ delay: 1, duration: 2 }}
+        transition={{ delay: 1, duration: 1.5 }}
         drag
         dragConstraints={{
           top: -.5,

@@ -14,7 +14,7 @@ function InfoCard({ title, textbody }) {
     <motion.div className="InfoCardDiv"
     animate={{  opacity: 1 }}
     initial={{  opacity: 0 }}
-    transition={{ delay:.5, duration: 2.5 }}
+    transition={{ delay:.5, duration: 1.75 }}
     >
 
       <Card body className="InfoCard text-center border border-dark">
