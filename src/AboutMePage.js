@@ -39,7 +39,6 @@ const containerVariants = {
  *      PhotoCard
  */
 
-
 function AboutMePage() {
   return (
     <Container>
@@ -50,7 +49,7 @@ function AboutMePage() {
         exit="exit"
       >
         <AboutMeCard title={"About Me"} textbody={aboutMeText} />
-        <Row>
+        <Row>ß
           <Col >
             <InfoCard title="Education" textbody={educationText} />
           </Col>
@@ -74,10 +73,9 @@ function AboutMePage() {
       <h1 className="AboutMePage">.</h1>
       <ProjectCard title="JQuery-Jeopardy 🕺"
         description={jeopardyText}
-        Link={"https://dazzling-austin-dd2ae2.netlify.app/"}
+        link={"https://dazzling-austin-dd2ae2.netlify.app/"}
         ghLink={"https://github.com/P-v-R/Jeopardy-JQuery"} />
       <h1 className="AboutMePage">.</h1>
-
     </Container>
   )
 }
