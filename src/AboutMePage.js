@@ -49,7 +49,7 @@ function AboutMePage() {
         exit="exit"
       >
         <AboutMeCard title={"About Me"} textbody={aboutMeText} />
-        <Row>ß
+        <Row>
           <Col >
             <InfoCard title="Education" textbody={educationText} />
           </Col>
