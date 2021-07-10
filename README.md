@@ -13,3 +13,5 @@ some things i have on the horizon.
  * Add a blog function...
     1. This is a little more complex, I think I would want to build a backend to store the blog posts in a DB
     2. Building a BE and a database would naturally make me want to adjust how im currently storing my text assets and clean up that approach
+ * Look into boosting my efficiency rating on lighthouse report, currently its sitting around 75%.
+ 
