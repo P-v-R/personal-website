@@ -8,7 +8,7 @@ const motivationText = "Simple & beautiful design. Accessible web pages for ever
  testing coverage. Consistent improvement. Being a part of a team. Time spent outside. And a really good meal!"
 
 
-const howdyText = "I’m Perry—a Web Developer, Photographer, and Graphic Designer based in Los Angeles, California."
+const howdyText = "I’m Perry — a Web Developer, Photographer, and Graphic Designer based in Los Angeles, California."
 
 const aboutMeText = "👋 Hey there! I'm a front-end focused web developer with a passion for beautiful design that’s\
  accessible to all, and enjoyed by many. I’m a team player, lover of video games, pursuer of positive impact, \
