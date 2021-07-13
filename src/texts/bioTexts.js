@@ -4,7 +4,7 @@ const educationText = [<li>Rithm School Full Stack Development Program</li>,
 <li>LinkedIn Learning project management certificate</li>,
 <li>Over 2,000 hours of development in 2020 & 2021! and counting!</li>]
 
-const motivationText = "Simple & beautiful design. Accessible web pages for everyone.. Consistency in code. Great\
+const motivationText = "Simple & beautiful design. Accessible web pages for everyone. Consistency in code. Great\
  testing coverage. Consistent improvement. Being a part of a team. Time spent outside. And a really good meal!"
 
 
@@ -15,7 +15,7 @@ const aboutMeText = "👋 Hey there! I'm a front-end focused web developer with 
  and overall decent human."
 
 const joblyText = "A React Based CRUD application for finding and applying to\
-  *artificial job postings. powered with\
+  *artificial job postings. Powered with\
   Express with data hosted on PostgreSQL"
 
 const warblerText = "A CRUD twitter like website for users to signup, post and like 'warbles' written in the warble community \
@@ -25,7 +25,7 @@ deployed via surge"
 // const thisSite = "Built on React.js, utilizing twitter bootstrap, Githubs API, an API joke generator(check the navbar for a nice joke),\
 //  Jest testing, framer motion for animation... and many other tools for an optimal user experience"
 
-const jeopardyText = "A game-show simulator to brush up on your trivia skills! using an open-source Jeopardy API. Built using JQuery, HTML, and CSS... simple as that!"
+const jeopardyText = "A game-show simulator to brush up on your trivia skills! Using an open-source Jeopardy API. Built using JQuery, HTML, and CSS... simple as that!"
 
 
 export { educationText, motivationText, howdyText, aboutMeText, joblyText, warblerText, jeopardyText }

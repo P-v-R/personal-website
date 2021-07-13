@@ -55,7 +55,7 @@ function AboutMePage() {
           </Col>
           <Col >
             <InfoCard title="Motivation" textbody={motivationText} />
-            <PhotoCard photoSrc={seaPhoto} title="The technical stuff 👇"/>            
+            <PhotoCard photoSrc={seaPhoto} title="The Technical Stuff 👇"/>            
           </Col>
         </Row>
         <InfoCardLarge />
