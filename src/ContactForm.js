@@ -64,6 +64,7 @@ function ContactForm() {
       initial={{ opacity: 0 }}
       transition={{ delay: 1 }}>
       <h2 className="ContactFormMessage">Contact Me</h2>
+      <h6 className="ContactFormMessage"><i>You can also reach me at me@perryvon.com</i></h6>
       <Form className="ContactForm" onChange={handleChange} onSubmit={handleSubmit}>
         <FormGroup>
           <Label for="email">Your Email?</Label>
