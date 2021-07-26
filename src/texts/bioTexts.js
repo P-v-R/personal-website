@@ -19,8 +19,7 @@ const joblyText = "A React Based CRUD application for finding and applying to\
   Express with data hosted on PostgreSQL"
 
 const warblerText = "A CRUD twitter like website for users to signup, post and like 'warbles' written in the warble community \
-back end built on FLASK and a front end built with React. Backend deployed with heroku (allow initial bootup time) and front end \
-deployed via surge"
+back end built on FLASK and deployed with heroku (allow initial bootup time)"
 
 // const thisSite = "Built on React.js, utilizing twitter bootstrap, Githubs API, an API joke generator(check the navbar for a nice joke),\
 //  Jest testing, framer motion for animation... and many other tools for an optimal user experience"
