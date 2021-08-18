@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import InfoCard from "./InfoCard";
 import "./AboutMePage.css"
 import InfoCardLarge from "./InfoCardLarge";
-import { educationText, motivationText, aboutMeText, joblyText, warblerText, jeopardyText } from "./texts/bioTexts"
+import { educationText, motivationText, aboutMeText, joblyText, warblerText, jeopardyText, namerrText } from "./texts/bioTexts"
 import PhotoCard from "./PhotoCard";
 import ProjectCard from "./ProjectCard";
 import skyPhoto from "./assets/sky.png"
@@ -61,12 +61,18 @@ function AboutMePage() {
         <InfoCardLarge />
         <PhotoCard photoSrc={skyPhoto} title="Projects" />
       </motion.div>
+      
+      <ProjectCard title="Namerr 🥸"
+        description={namerrText}
+        link={"https://www.npmjs.com/package/namerr"}
+        ghLink={"https://github.com/P-v-R/namerr"} />
+      <h1 className="AboutMePage">.</h1>
       <ProjectCard title="Jobly JobFinder 🔎"
         description={joblyText}
         link={"http://jobly-jobfinder.surge.sh/"}
         ghLink={"https://github.com/P-v-R/react-jobly-frontend"} />
       <h1 className="AboutMePage">.</h1>
-      <ProjectCard title="Warbler 🦤 "
+      <ProjectCard title="Warbler 🐥 "
         description={warblerText}
         link={"http://warbler-kr.herokuapp.com/"}
         ghLink={"https://github.com/P-v-R/warbler"} />

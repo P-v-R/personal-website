@@ -26,5 +26,7 @@ back end built on FLASK and deployed with heroku (allow initial bootup time)"
 
 const jeopardyText = "A game-show simulator to brush up on your trivia skills! Using an open-source Jeopardy API. Built using JQuery, HTML, and CSS... simple as that!"
 
+const namerrText = "A Node.js package for generating large amounts of fake names, usernames, emails and more!"
 
-export { educationText, motivationText, howdyText, aboutMeText, joblyText, warblerText, jeopardyText }
+
+export { educationText, motivationText, howdyText, aboutMeText, joblyText, warblerText, jeopardyText, namerrText }
