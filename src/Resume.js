@@ -13,11 +13,6 @@ const Resume = () => {
     <div className="ResumeBody ">
       <a className="ResumeDownload" href={resPDF} download>  <h3> download Resume </h3> </a>
  
-      {/* <img
-        src={res2}
-        className="img-fluid"
-        alt="my resume"
-      /> */}
       <img
         src={resSVG}
         className="img-fluid"
