@@ -41,27 +41,5 @@ class JokeApi {
 
 }
 
-// class emailApi {
-
-//   const serviceID = 'default_service';
-//   const templateID = 'template_qurebh8';
-
-  
-
-//   static async sendEmail(contactFormData) {
-
-    // var templateParams = {
-    //   email: contactFormData.email,
-    //   subject: contactFormData.subject,
-    //   message: contactFormData.message
-    // };
-
-//     const resp = await axios.post(BASE_EMAIL_URL, contactFormData)
-
-//     return resp.status
-
-
-//   }
-// }
 
 export default JokeApi;

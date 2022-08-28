@@ -2,14 +2,30 @@ import React from 'react';
 import "./ProjectCard.css"
 import { motion } from "framer-motion"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDesktop } from '@fortawesome/free-solid-svg-icons'
 
 
 import { Card, CardTitle, CardLink} from 'reactstrap';
 
 
-function ProjectCard({ title, description, link, ghLink }) {
+function ProjectCard({ title, description, link, ghLink, isPublic = false }) {
 
-  // console.log("link ==>",)
+  function generateCodeLink() {
+    if (isPublic === true) {
+      return(
+        <CardLink href={link} target="_blank">
+          <FontAwesomeIcon className="icon" icon={['fab', 'github']} size="2x"/>
+        </CardLink>
+      )
+    } else {
+      return (
+        <CardLink href={link} target="_blank">
+          <FontAwesomeIcon className="icon" icon={faDesktop} size="2x"/>
+        </CardLink>
+      )
+    }
+  }
+
   return (
     <motion.div className="ProjectCardDiv"
       animate={{ y: 0, opacity: 1 }}
@@ -24,9 +40,7 @@ function ProjectCard({ title, description, link, ghLink }) {
           {description}
           </CardLink>
         </div>
-        <CardLink href={ghLink} target="_blank">
-          <FontAwesomeIcon className="icon" icon={['fab', 'github']} size="2x"/>
-        </CardLink>
+        {generateCodeLink()}
       </Card>
 
     </motion.div>

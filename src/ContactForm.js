@@ -36,7 +36,6 @@ function ContactForm() {
                      evt.target, 
                      EMAIL_ID)
       .then((result) => {
-        console.log(result.status);
         isSent(true)
       }, (error) => {
         console.log(error.text);
@@ -45,6 +44,7 @@ function ContactForm() {
   // handle individual inputs on forms 
   function handleChange(evt) {
     const { name, value } = evt.target;
+    console.log(evt.target)
     setFormData(fData => ({
       ...fData,
       [name]: value.trim(),
@@ -52,6 +52,7 @@ function ContactForm() {
   }
 
   if (sent) {
+    console.log(formData)
     return (
     <Alert color="dark" className="text-center">
       Thanks for reaching out, I'll get back to you right away!

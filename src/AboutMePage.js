@@ -5,7 +5,14 @@ import { motion } from "framer-motion"
 import InfoCard from "./InfoCard";
 import "./AboutMePage.css"
 import InfoCardLarge from "./InfoCardLarge";
-import { educationText, motivationText, aboutMeText, joblyText, warblerText, jeopardyText, namerrText } from "./texts/bioTexts"
+import { 
+  educationText,
+  motivationText,
+  aboutMeText,
+  namerrText, 
+  radixText,
+  movepriceText
+} from "./texts/bioTexts"
 import PhotoCard from "./PhotoCard";
 import ProjectCard from "./ProjectCard";
 import skyPhoto from "./assets/sky.png"
@@ -51,10 +58,10 @@ function AboutMePage() {
         <AboutMeCard title={"About Me"} textbody={aboutMeText} />
         <Row>
           <Col >
-            <InfoCard title="Education" textbody={educationText} />
+            <InfoCard key="1" title="Education" textbody={educationText} />
           </Col>
           <Col >
-            <InfoCard title="Motivation" textbody={motivationText} />
+            <InfoCard key="2" title="Motivation" textbody={motivationText} />
             <PhotoCard photoSrc={seaPhoto} title="The Technical Stuff 👇"/>            
           </Col>
         </Row>
@@ -62,25 +69,24 @@ function AboutMePage() {
         <PhotoCard photoSrc={skyPhoto} title="Projects" />
       </motion.div>
       
+      <ProjectCard title="Radix 💸"
+        description={radixText}
+        link={"https://www.radixdlt.com/"} />
+      <h1 className="AboutMePage">.</h1>
+      <ProjectCard title="Moveprice 📦"
+        description={movepriceText}
+        link={"https://www.moveprice.com/"} />
+      <h1 className="AboutMePage">.</h1>
       <ProjectCard title="Namerr 🥸"
         description={namerrText}
         link={"https://www.npmjs.com/package/namerr"}
-        ghLink={"https://github.com/P-v-R/namerr"} />
+        ghLink={"https://github.com/P-v-R/namerr"}
+        isPublic={true} />
       <h1 className="AboutMePage">.</h1>
-      <ProjectCard title="Jobly JobFinder 🔎"
-        description={joblyText}
-        link={"http://jobly-jobfinder.surge.sh/"}
-        ghLink={"https://github.com/P-v-R/react-jobly-frontend"} />
-      <h1 className="AboutMePage">.</h1>
-      <ProjectCard title="Warbler 🐥 "
-        description={warblerText}
-        link={"http://warbler-kr.herokuapp.com/"}
-        ghLink={"https://github.com/P-v-R/warbler"} />
-      <h1 className="AboutMePage">.</h1>
-      <ProjectCard title="JQuery-Jeopardy 🕺"
-        description={jeopardyText}
-        link={"https://dazzling-austin-dd2ae2.netlify.app/"}
-        ghLink={"https://github.com/P-v-R/Jeopardy-JQuery"} />
+      <ProjectCard title="Check out my Github! 💾"
+        description="Find all my work here!"
+        link={"https://github.com/P-v-R"}
+        isPublic={true} />
       <h1 className="AboutMePage">.</h1>
     </Container>
   )

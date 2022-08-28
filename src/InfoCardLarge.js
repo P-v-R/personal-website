@@ -31,7 +31,7 @@ function InfoCardLarge() {
         <div className="InfoCardLarge-Text">
           <motion.div className="InfoCardLoadingBar"> </motion.div>
           <ProgressBar percent={95} title={"Python"} rating={"🥇"} />
-          <ProgressBar percent={95} title={"JavaScript"} rating={"🏆"} />
+          <ProgressBar percent={95} title={"Elixir/Phoenix"} rating={"🏆"} />
           <ProgressBar percent={95} title={"TypeScript"} rating={"👨‍💻"} />
           <ProgressBar percent={95} title={"React"} rating={"🔥"} />
           <ProgressBar percent={95} title={"Node.js"} rating={"🤌"} />
