@@ -1,5 +1,5 @@
-import "./NavBarMain.css"
-import React, { useState } from 'react';
+import "./NavBarMain.css";
+import React, { useState } from "react";
 import {
   Collapse,
   Navbar,
@@ -11,13 +11,12 @@ import {
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem
-} from 'reactstrap';
+  DropdownItem,
+} from "reactstrap";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileCsv } from '@fortawesome/free-solid-svg-icons'
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileCsv } from "@fortawesome/free-solid-svg-icons";
 
 // logic to fade into on page reload
 const containerVariants = {
@@ -26,24 +25,23 @@ const containerVariants = {
   },
   visible: {
     opacity: 1,
-    transition: { delay: .5, duration: 1.5}
+    transition: { delay: 0.5, duration: 1.5 },
   },
   exit: {
     x: "-100vw",
-    transition: { ease: "easeInOut" }
-  }
-}
-
+    transition: { ease: "easeInOut" },
+  },
+};
 
 /**
  * NavBarMain
  * STATE:
  *    isOpen - is drop down menu clicked? t/f
- * 
+ *
  */
 function NavBarMain() {
   const [isOpen, setIsOpen] = useState(false);
-  const name = "<Perryvon/>"
+  const name = "<Perryvon/>";
 
   const toggle = () => setIsOpen(!isOpen);
 
@@ -52,17 +50,28 @@ function NavBarMain() {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      exit="exit">
-      <Navbar className="NavBarMain border-bottom border-dark" light expand="md">
-        <NavbarBrand className="name-logo" href="/"><h2>{name}</h2></NavbarBrand>
+      exit="exit"
+    >
+      <Navbar
+        className="NavBarMain border-bottom border-dark"
+        light
+        expand="md"
+      >
+        <NavbarBrand className="name-logo" href="/">
+          <h2>{name}</h2>
+        </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <Link className="nav-link" to="/aboutme">About Me</Link>
+              <Link className="nav-link" to="/aboutme">
+                About Me
+              </Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/contact">Contact</Link>
+              <Link className="nav-link" to="/contact">
+                Contact
+              </Link>
             </NavItem>
 
             <UncontrolledDropdown nav inNavbar>
@@ -71,43 +80,52 @@ function NavBarMain() {
               </DropdownToggle>
               <DropdownMenu className="border border-dark dropDown" right>
                 <DropdownItem className="NavBar-menu">
-                  <Link className="dropLink"
+                  <Link
+                    className="dropLink"
                     style={{ color: "black" }}
-                    to="/resume">
-                    Resume</Link>
+                    to="/resume"
+                  >
+                    Resume
+                  </Link>
                 </DropdownItem>
-                <DropdownItem className="NavBar-menu">
+                {/* <DropdownItem className="NavBar-menu">
                   <Link className="dropLink"
                     style={{ color: "black" }}
                     to="/joke">
                     Tell me A Joke!</Link>
-                </DropdownItem>
+                </DropdownItem> */}
                 <DropdownItem className="NavBar-menu">
-                  <Link className="dropLink"
+                  <Link
+                    className="dropLink"
                     style={{ color: "black" }}
-                    to={{pathname: "https://perryvon.medium.com/"}}
-                    target="_blank">
-                    Blog</Link>
+                    to={{ pathname: "https://perryvon.medium.com/" }}
+                    target="_blank"
+                  >
+                    Blog
+                  </Link>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  <Link className="dropLink"
-                    style={{ color: "black" }}
-                    to="/">
-                    Home</Link>
+                  <Link className="dropLink" style={{ color: "black" }} to="/">
+                    Home
+                  </Link>
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
             <NavLink href="https://github.com/P-v-R" target="_blank">
-              <FontAwesomeIcon className="iconLink" icon={['fab', 'github']} />
+              <FontAwesomeIcon className="iconLink" icon={["fab", "github"]} />
             </NavLink>
-            <NavLink 
-              href="https://www.linkedin.com/in/perry-von-rosenvinge-65a27a89/" 
-              target="_blank">
-              <FontAwesomeIcon className="iconLink" icon={['fab', 'linkedin']} />
+            <NavLink
+              href="https://www.linkedin.com/in/perry-von-rosenvinge-65a27a89/"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                className="iconLink"
+                icon={["fab", "linkedin"]}
+              />
             </NavLink>
             <NavLink href="/resume" target="_blank">
-            <FontAwesomeIcon className="iconLink" icon={faFileCsv} />
+              <FontAwesomeIcon className="iconLink" icon={faFileCsv} />
             </NavLink>
           </Nav>
         </Collapse>
